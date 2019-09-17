@@ -1,0 +1,11 @@
+{
+  "title": "Label",
+  "status": "wip",
+  "context": {
+    "label": {
+      "for": "default",
+      "extra-class": "",
+      "text": "default"
+    }
+  }
+}

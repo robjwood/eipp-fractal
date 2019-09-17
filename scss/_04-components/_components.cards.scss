@@ -1,0 +1,206 @@
+/* CARDS
+===========================================
+===========================================*/
+
+.c-card-wrap {
+  padding-left: 0;
+
+  @include mq-ns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+    grid-gap: 0.5rem;
+  }
+
+}
+
+  .c-card {
+    border: $u1/2 solid black;
+    border-radius: 0.5rem;
+    background-color: white;
+    list-style-type: none;
+    margin-bottom: $u1;
+
+    @include mq-ns {
+      display: flex;
+      flex: 0 1 calc(50% - 0.25rem);
+      margin-bottom: 0;
+    }
+
+    @include mq-l {
+      display: flex;
+      flex: 0 1 calc(25% - 0.25rem);
+    }
+  }
+
+    .c-card__link,
+    .c-card__link:visited {
+      color: $Black;
+    }
+
+      .c-card__img {
+        border-bottom: $u1/2 solid black;
+        position: relative;
+      }
+  
+  
+  
+
+
+// Modifiers
+
+.c-card--no-border {
+  border: 0;
+}
+
+// .c-card--halves {
+//   .c-card__item {
+//     width: 50%;
+//   }
+// }
+
+// .c-card--thirds {
+//   .c-card__item {
+//     width: 33.33%;
+//   }
+// }
+
+// .c-card--quarters {
+//   .c-card__item {
+//     width: 25%;
+//   }
+// }
+
+// .c-card--fifths {
+//   .c-card__item {
+//     width: 22%;
+//   }
+// }
+
+// .c-card--sixths {
+//   .c-card__item {
+//     width: 16.66%;
+//   }
+// }
+
+.c-card--sevenths > * {
+  width: 14.28%;
+}
+
+// .c-card--eighths {
+//   .c-card__item {
+//     width: 12.5%;
+//   }
+// }
+
+.c-card--ninths > * {
+  width: 11.11%;
+}
+
+// .c-card--tenths {
+//   .c-card__item {
+//     width: 10%;
+//   }
+// }
+
+
+
+
+/*
+@supports (display: grid) {
+  .c-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: .5rem;
+    padding-left: 0;
+  }
+
+    .c-card {
+      border: $u1/2 solid black;
+      border-radius: 0.5rem;
+      display: inline-block;
+      position: relative;
+      background-color: white;
+    }
+
+    .c-card--no-gap {
+      grid-gap: 0;
+    }
+
+    .c-card--halves {
+      grid-template-columns: repeat(2, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+    
+    .c-card--thirds {
+      grid-template-columns: repeat(3, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+    
+    .c-card--quarters {
+      grid-template-columns: repeat(4, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--fifths {
+      grid-template-columns: repeat(5, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--sixths {
+      grid-template-columns: repeat(6, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--sevenths {
+      grid-template-columns: repeat(7, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--eighths {
+      grid-template-columns: repeat(8, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--ninths {
+      grid-template-columns: repeat(9, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--tenths {
+      grid-template-columns: repeat(10, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+  }
+*/

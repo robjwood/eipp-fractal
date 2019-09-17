@@ -1,0 +1,98 @@
+
+
+<div class="o-wrapper">
+  <nav role="navigation">
+  <ul class="c-global-nav">
+    <li class="c-global-nav__item"><a href="/components/preview/" class="c-global-nav__link c-global-nav__logo"><img src="http://www.eipublicanpartnerships.com/_layouts/15/Brightstarr.EI.Intranet/img/pp-logo.png" alt="ei publican partnerships" class=""></a></li>
+    
+    <li class="c-global-nav__item"><a href="#" class="c-global-nav__link">Link one</a></li>
+    <li class="c-global-nav__item"><a href="#" class="c-global-nav__link">Link two</a></li>
+    <li class="c-global-nav__item"><a href="#" class="c-global-nav__link">Link three</a></li>
+    <li class="c-global-nav__item"><a href="#" class="c-global-nav__link">Link four</a></li>
+    <li class="c-global-nav__item"><a href="#" class="c-global-nav__link">Link five</a></li>
+
+    <li class="c-global-nav__item"><a href="" class="c-global-nav__link">User</a></li>
+  </ul>
+</nav>
+
+
+
+</div>
+
+
+<div class="o-wrapper u-pb4">
+
+  <h1>Contact Us</h1>
+  <p>If you have any questions or need any help, please get in touch.</p>
+
+
+  <div>
+    <div class="js-accordion__toggle c-accordion c-accordion--toggle u-bg-gold">
+      <img class="c-accordion__icon" src="/img/icon-meet.png" alt="">
+      <h3 class="c-accordion__title  u-white">Stuff here</h3>
+    </div>
+
+    <div class="js-accordion__content o-wrapper o-wrapper--m u-pb4">
+      <p>Content in here.</p>
+    </div>
+  </div>
+
+
+
+  <details role="group">
+    <summary role="button" class="c-accordion u-bg-gold">
+      <img class="c-accordion__icon" src="/img/icon-meet.png" alt="">
+      <h3 class="c-accordion__title  u-white">Let's meet and talk</h3>
+    </summary>
+    
+    <div class="o-wrapper u-pb4">
+      <p>So you've found the right pub for you! It's now time to start completing your profile and for you to meet our team to discuss your future pub business. You should have received some information from our recruitment team telling you more about your chosen pub.</p>
+
+      
+      <ul>
+      </ul>
+      
+      <hr />
+      
+      <p class="u-mt2 u-mb0"><strong>Milestones</strong></p>
+      <ul>
+      </ul>
+    </div>
+  </details>
+
+  <details role="group">
+    <summary role="button" class="c-accordion u-bg-aqua">
+      <img class="c-accordion__icon" src="/img/icon-business-plan.png" alt="">
+      <p class="c-accordion__title  u-white">Planning your business</p>
+    </summary>
+    
+    <div class="o-wrapper u-pb4">
+      <p>You've visited the competitor pubs and have instructed a qualified accountant to work with you on completing your business plan. It's important that both you, and any other named persons on the agreement, complete a profile in addition to confirming your chosen legal business structure.</p>
+
+      
+      <ul>
+      </ul>
+      
+      <hr />
+      
+      <p class="u-mt2 u-mb0"><strong>Milestones</strong></p>
+      <ul>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<script>
+  $(function() {
+    
+    var allPanels = $('.js-accordion .js-accordion__content').addClass('');
+
+    $('.js-accordion__toggle').click(function () {
+
+      $(this).toggleClass('closed');
+      var $t = $(this).next();
+
+      return false;
+    });
+  });
+</script>

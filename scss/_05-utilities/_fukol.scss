@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #FUKOL
+   ========================================================================== */
+
+/**
+ * A minimal grid from Heydon Pickering. Just playin'
+ *
+ */
+
+.fukol {
+  // Just for positive margins
+  // margin: $unit-small;
+}
+
+.fukol-grid {
+  display: flex;            /* 1 */
+  flex-wrap: wrap;          /* 2 */
+  margin: -$unit-small;     /* 5 (edit me!) */
+}
+
+.fukol-grid > * {
+  flex: 1 0 $unit-small*6;  /* 3 (edit me!) */
+  margin: $unit-small;      /* 4 (edit me!) */
+}

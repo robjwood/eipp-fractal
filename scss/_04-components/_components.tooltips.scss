@@ -1,0 +1,49 @@
+/* TOOLTIPS
+===========================================
+
+===========================================*/
+
+.toggletip {
+  display: block;
+  margin-top: $u1;
+  position: relative;
+
+  @include mq-ns {
+    display: inline-block;
+    float: right;
+    margin-top: inherit;
+    margin-right: $u1;
+  }
+
+  button {
+    background: $Grey90;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: $f6;
+    font-weight: bold;
+    padding: 0 $u1*0.7;
+  } 
+}
+
+/* the bubble element, added inside the toggletip live region */
+
+  .toggletip__bubble {
+    position: absolute;
+    background: $Grey90;
+    color: #fff;
+    line-height: $lh-copy;
+    padding: 0.5rem;
+    right: 100%;
+    width: 100%;
+
+    top: 0;
+    display: inline-block;
+    width: 18em;
+    z-index: 1;
+
+    @include mq-l {
+      top: 0;
+      left: initial;
+    }
+  }

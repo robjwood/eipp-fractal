@@ -1,0 +1,129 @@
+/* TYPOGRAPHY
+===========================================
+===========================================*/
+
+// Web Fonts
+@font-face {
+  font-family: 'avalon';
+  src: url('../fonts/avalon_book_macroman/Avalon-Book-webfont.eot');
+  src: url('../fonts/avalon_book_macroman/Avalon-Book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/avalon_book_macroman/Avalon-Book-webfont.woff') format('woff'),
+       url('../fonts/avalon_book_macroman/Avalon-Book-webfont.ttf') format('truetype'),
+       url('../fonts/avalon_book_macroman/Avalon-Book-webfont.svg#avalonmedium') format('svg');
+}    
+
+@font-face {
+  font-family: 'avalonmedium';
+  src: url('../fonts/avalon_medium_macroman/Avalon-Medium-webfont.eot');
+  src: url('../fonts/avalon_medium_macroman/Avalon-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/avalon_medium_macroman/Avalon-Medium-webfont.woff') format('woff'),
+       url('../fonts/avalon_medium_macroman/Avalon-Medium-webfont.ttf') format('truetype'),
+       url('../fonts/avalon_medium_macroman/Avalon-Medium-webfont.svg#avalonmedium') format('svg');
+}
+
+@font-face {
+  font-family: 'avalonbold';
+  src: url('../fonts/avalon_demi_macroman/Avalon-Demi-webfont.eot');
+  src: url('../fonts/avalon_demi_macroman/Avalon-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/avalon_demi_macroman/Avalon-Demi-webfont.woff') format('woff'),
+       url('../fonts/avalon_demi_macroman/Avalon-Demi-webfont.ttf') format('truetype'),
+       url('../fonts/avalon_demi_macroman/Avalon-Demi-webfont.svg#avalonbold') format('svg');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lh-title;
+  margin-top: 0;
+  margin-bottom: $u2;
+}
+
+h1 {
+  font-family: 'avalonbold', serif;
+  font-size: $f1;
+  margin-bottom:$u2;
+}
+
+h2 {
+  font-family: 'avalonbold', serif;
+  font-size: $f2;
+  margin-bottom: $u2;
+}
+
+h3 {
+  font-family: 'avalonbold', serif;
+  font-size: $f3;
+}
+
+h4 {
+  font-family: 'avalonmedium', serif;
+  font-size: $f4;
+  font-weight: 400;
+  margin-bottom: $u1;
+}
+
+h5 {
+  font-family: 'avalonmedium', serif;
+  font-size: $f5;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: 'avalonmedium', serif;
+  font-size: $f6;
+  font-weight: 400;
+}
+
+p,
+ul,
+ol,
+li {
+  line-height: $lh-copy;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $u2;
+}
+
+ul {
+  padding-left: $u2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

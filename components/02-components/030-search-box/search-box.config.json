@@ -1,0 +1,22 @@
+{
+  "title": "Search box",
+  "status": "wip",
+  "context": {
+    "label": {
+      "for": "search",
+      "extra-class": "",
+      "text": "Find your perfect pub"
+    },
+    "input": {
+      "name": "search",
+      "value": "",
+      "ID": "search",
+      "placeholder": "Find your perfect pub"
+    },
+    "button": {
+      "colour": "c-btn--primary",
+      "size": "c-btn--m",
+      "text": "Search"
+    }
+  }
+}

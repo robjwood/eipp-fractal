@@ -1,0 +1,47 @@
+/* UTILITIES
+===========================================
+===========================================*/
+
+.cf:after, .cf:before {
+  content: " ";
+  display: table;
+}
+
+.overflow-container {
+  overflow-y: scroll;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mr-auto { margin-right: auto; }
+.ml-auto { margin-left:  auto; }
+
+@media (min-width: #{$not-small-width}){
+  .center-ns {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mr-auto-ns { margin-right: auto; }
+  .ml-auto-ns { margin-left:  auto; }
+}
+
+@media (min-width: #{$medium-width}){
+  .center-m {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mr-auto-m { margin-right: auto; }
+  .ml-auto-m { margin-left:  auto; }
+}
+
+@media (min-width: #{$large-width}){
+  .center-l {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mr-auto-l { margin-right: auto; }
+  .ml-auto-l { margin-left:  auto; }
+}

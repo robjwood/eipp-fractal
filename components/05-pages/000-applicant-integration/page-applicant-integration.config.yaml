@@ -1,0 +1,265 @@
+label: Applicant integration
+context:
+  primaryNav: '@global-nav'
+  pubShortAddress: The Red Lion Solihull
+  applicantName: Bob Smith, Sarah Smith
+
+  # accordion: 
+  #   - bgClass: u-bg-gold
+  #     titleClass: u-white
+  #     icon: /img/icon-sport.png
+  #     title: Let's meet and talk
+  #     control: /img/icon-toggle-plus.svg
+
+  #   - bgClass: u-bg-aqua
+  #     titleClass: u-white
+  #     icon: /img/icon-sport.png
+  #     title: Planning your business
+  #     control: /img/icon-toggle-plus.svg
+    
+  #   - bgClass: u-bg-pear
+  #     titleClass: u-white
+  #     icon: /img/icon-sport.png
+  #     title: Agreeing terms and advice
+  #     control: /img/icon-toggle-plus.svg
+    
+  #   - bgClass: u-bg-purple
+  #     titleClass: u-white
+  #     icon: /img/icon-sport.png
+  #     title: Signing your agreement
+  #     control: /img/icon-toggle-plus.svg
+
+
+  actionsHeader:  <table class="table-timeline u-mb2">
+                    <thead>
+                      <tr>
+                        <th class="w-50">Description</th>
+                        <th class="w-40">Actions</th>
+                        <th class="w-10">Status</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <p><strong>Your actions to do</strong></p>
+
+  # actionsHeader:  <table class="table-timeline">
+  #                   <thead>
+  #                     <tr>
+  #                       <th class="w-33">Description</th>
+  #                       <th class="w-33">Actions</th>
+  #                       <th class="w-25">Status</th>
+  #                     </tr>
+  #                   </thead>
+  #                   <tbody>
+  #                     <tr>
+  #                       <td colspan="4"><strong>Your actions to do</strong></td>
+  #                     </tr>
+    
+  # Step 1
+  step1actions:
+    - toDoSummary: Initial call with Recruitment
+      toDoActions:  <div class="dib"><a href="#" class="c-btn c-btn--s c-btn--quarternary">Read</a></div>
+                    <div class="dib"><a href="#" class="c-btn c-btn--s c-btn--special">Upload</a></div>
+      toDoLongDesc: Thank you for expressing interest in one of our pubs. 
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Start to complete your profile
+      toDoLongDesc: Please begin to complete your <b>Profile</b>. Please note all co-applicants will be required to complete their own Profile(s) and will require their own individual email address(es).
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Read through initial information
+      toDoLongDesc: Following your discussion with our Recruitment Team, if you have found the right pub for you, we will send you some important pub specific information for you to read before you prepare your business plan.
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Read 'A guide to our agreements'
+      toDoLongDesc: We would advise you to read <b>'A guide to our agreements'</b>.
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Initial call with our Divisional Lettings Manager (DLM)
+      toDoLongDesc: Our DLM will call you and explain the next steps.
+      toDoStatus: 
+
+    - toDoSummary: Prepare for your meeting
+      toDoLongDesc: Write a list of any questions you would like answered at your meeting. This may include questions about the proposed agreement, the premises licence or your training requirements.
+      toDoStatus:
+
+    - toDoSummary: Complete meeting with our Divisional Lettings Manager (DLM) or Regional Manager (RM)
+      toDoLongDesc: Meet with our DLM /RM to discuss your chosen pub(s). They will discuss with you your ideas and retail proposition and any property works that might be required.
+      toDoStatus:
+
+    - toDoSummary: Upload your Proof of Funding
+      toDoLongDesc: Please upload a copy of your Proof of Funding to the documents section on your profile.
+      toDoStatus: 
+
+    - toDoSummary: Upload your Personal Licence
+      toDoLongDesc: Please upload a copy of your Personal Licence photo card to the documents section on your profile.
+      toDoStatus: 
+
+    - toDoSummary: Upload your Right to Work documentation
+      toDoLongDesc: Please upload your Proof of Right to Work to the documents section on your profile.
+      toDoStatus: 
+
+    - toDoSummary: Complete Pre-Entry Awareness Training
+      toDoLongDesc: We advise you complete <strong>Pre Entry Awareness Training</strong> (PEAT) and upload your certificate to the documents section on your profile. Add statement that recommended but not compulsory
+      toDoStatus: 
+
+    - toDoSummary: Read through further information
+      toDoLongDesc: After your meeting, we will send you some additional information to read, including a schedule of condition, before you prepare your business plan.
+      toDoStatus: 
+
+    - toDoSummary: Read the Pubs Code 2016
+      toDoLongDesc: We strongly recommend you read the <strong>Pubs Code 2016</strong> and understand the obligations of your proposed agreement. 
+      toDoStatus: 
+
+    - toDoSummary: Get independent professional advice
+      toDoLongDesc: You must take independent professional advice including financial, legal, property and rental valuation advice. <strong>A list of recommended Solicitors can be found here.</strong> For further information on property and rental valuation visit the <strong>Royal Institution of Chartered Surveyors</strong>.
+
+      toDoStatus: 
+
+  step1milestones:
+    - milestoneSummary: Full facts information issued
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Schedule 1 Pubs Code 2016 read by Applicant
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: ID, Personal License and Proof of Funding uploaded
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+
+
+  # Step 2
+  step2actions:
+    - toDoSummary: Instruct a qualified accountant
+      toDoLongDesc: Choose and instruct a qualified Accountant to work with you on your business plan. A list of BII qualified Accountants can be found <strong>here</strong>.
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Inform us of your accountant 
+      toDoLongDesc: Once you have informed our DLM/RM of your chosen accountant, we will send you some important information regarding the minimum business plan requirements along with an upload code for your Accountant.
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Consider company set up
+      toDoLongDesc: Before you produce your business plan, please consider how the business will be set up, i.e. Sole Trader or a Limited Company. The business plan must be submitted in this / these name(s).
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Open business bank accounts and register with HMRC and PAYE
+      toDoLongDesc: It is important to register with HMRC and for PAYE as well as opening a business bank account.
+      toDoStatus: 
+
+    - toDoSummary: eilearning
+      toDoLongDesc: New modules are now available to you via your training portal.
+      toDoStatus: 
+
+    - toDoSummary: Prepare your business plan
+      toDoLongDesc: Meet with your Accountant to prepare your business plan, in accordance with your legal business structure.
+      toDoStatus: 
+
+    - toDoSummary: Read through our property service packs and repair obligations 
+      toDoLongDesc: We recommend to read further information on our <strong>property service packs and repairing obligations</strong>.
+      toDoStatus: 
+
+    - toDoSummary: Complete profile
+      toDoLongDesc: Please ensure your completed profile is submitted including uploading your Personal Licence, proof of funding, Right to Work and training certificates – please ensure everyone that is going to be named on your agreement has submitted their individual Profiles.
+      toDoStatus: 
+
+    - toDoSummary: Accountant to upload final business plan
+      toDoLongDesc: Please provide your Accountant with your business plan upload code, this will allow them to upload your final business plan. 
+      toDoStatus: 
+
+    - toDoSummary: Confirm if independent advice taken
+      toDoLongDesc: Please inform our DLM/RM if you have taken independent legal/rental/property advice. If so, please confirm who from.  
+      toDoStatus: 
+
+    - toDoSummary: Read Landlord & Tenant Act 1954 and declaration
+      toDoLongDesc: The agreement you are agreeing to is contracted out of the Landlord & Tenant Act 1954. We will issue you with a simple declaration which details your rights. We strongly recommend that you take independent legal advice. Please note that all parties need to sign this declaration 14 days before completion. 
+      toDoStatus: 
+
+    - toDoSummary: Complete online ordering training module
+      toDoLongDesc: Please complete the eilearning module on How to Order Online.
+      toDoStatus: 
+
+  step2milestones:
+    - milestoneSummary: Online profile completed
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Landlord & Tenant Act 1954 read by Applicant
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Legal structure chosen for new business
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Business plan submitted & approved
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+
+
+  # Step 3
+  step3actions:
+    - toDoSummary: Read through your Pre Contract form
+      toDoLongDesc: Your agreement and associated documents will be issued via email for you to review. It will detail all of your agreed terms and must be signed by all named parties.
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Confirm your day of change
+      toDoLongDesc: Your day of change will be confirmed when you sign the Pre-Contract Form (PCF) with our DLM/RM. You will also need to complete your Direct Debit Mandate.  
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: eilearning 
+      toDoLongDesc: New modules are now available to you via your training portal. No initial modules mentioned!
+      toDoStatus: 
+
+    - toDoSummary: Make Pre-Completion Statement funds payment
+      toDoLongDesc: Your Pre-Completion Statement (PCS) will detail the funds required. One of the team will call you to take payment before your completion day.
+      toDoStatus: 
+
+    - toDoSummary: Place first online order
+      toDoLongDesc: Your DLM/RM will contact you to help you place your first online order. If you have not yet done so, please complete this eilearning module on How to Order Online. 
+      toDoStatus: 
+
+  step3milestones:
+    - milestoneSummary: First online order placed, if not already done so
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Date of change confirmed and agreement in production
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Pre-Completion Statement funds payment made
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+
+
+  # Step 4
+  step4actions:
+    - toDoSummary: Sign your agreement 
+      toDoLongDesc: Your agreement will be emailed to you seven days before your completion date. The physical copy to sign will be provided on day of change. 
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: eilearning
+      toDoLongDesc: All eilearning modules are now available to you via the training portal.
+      toDoStatus: <img src="/img/tick-green.png" />
+
+    - toDoSummary: Welcome to your new pub business!
+      toDoLongDesc: Our DLM / RM will meet you on the completion day to sign the agreement with you. Congratulations and welcome to your new pub <a href="http://www.bbc.co.uk">business</a>! 
+ 
+      toDoStatus:
+
+  step4milestones:
+    - milestoneSummary: Agreement signed and change completed
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: Free website and BII membership ordered
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900
+
+    - milestoneSummary: eilearning modules completed
+      milestoneLongDesc: 
+      milestoneDate: 01 Jan 1900

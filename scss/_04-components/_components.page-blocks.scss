@@ -1,0 +1,23 @@
+/* COMPONENTS
+===========================================
+===========================================*/
+
+  // TABS
+
+
+  .c-page-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(115px,1fr));
+    grid-gap: 10px;
+    margin: initial;
+  }
+
+
+    .c-page-blocks__item {
+      border: 1px solid #bababa;
+      display: inline-block;
+      // margin: 0 5px 5px 0;
+      min-height: 100px;
+      vertical-align: top;
+      // width: 32%;
+    }

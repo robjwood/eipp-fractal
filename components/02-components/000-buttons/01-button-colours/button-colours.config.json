@@ -1,0 +1,31 @@
+{
+  "title": "Buttons",
+  "status": "wip",
+  "context": {
+    "button": {
+      "text": "Primary",
+      "purpose": "c-btn--primary"
+    }
+  },
+  "variants": [
+    {
+      "name": "Secondary",
+      "context": {
+        "button": {
+          "text": "Secondary",
+          "purpose": "c-btn--secondary"
+        }
+      }
+    },
+    {
+      "name": "Tertiary",
+      "context": {
+        "button": {
+          "text": "Tertiary",
+          "purpose": "c-btn--tertiary"
+        }
+      }
+    }
+  ],
+  "collated": true
+}

@@ -1,0 +1,25 @@
+  context: 
+    accordion:
+      - bgClass: u-bg-blue
+        titleClass: u-white
+        icon: /img/icon-sport.png
+        title: One
+        control: /img/link-indicator.png
+
+      - bgClass: u-bg-violet
+        titleClass: u-white
+        icon: /img/icon-sign.png
+        title: Two
+        control: /img/link-indicator.png
+
+      - bgClass: u-bg-aqua
+        titleClass: u-white
+        icon: /img/icon-phone.png
+        title: Three
+        control: /img/link-indicator.png
+        
+      - bgClass: u-bg-pear
+        titleClass: u-white
+        icon: /img/icon-sport.png
+        title: Four
+        control: /img/link-indicator.png

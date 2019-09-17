@@ -1,0 +1,239 @@
+{{> @header-publican }}
+
+<div class="o-wrapper u-pb4">
+
+  <h1>Applicant prototype</h1>
+  <img src="https://via.placeholder.com/1000x300?text=Banner" alt="" class="mb4">
+
+  <ul class="c-card-wrap pl0">
+    <TheCard card-header="Application 1" card-copy="Small copy" />
+  
+    <TheCard card-header="Application 2" card-copy="Standard copy" />
+  
+    <TheCard card-header="Application 3" card-copy="Big copy" />
+  </ul>
+
+    
+    <!-- eilearning link -->
+    <p class="mb6">Start your online learning and development learning today with <a href="">eilearning</a></p>
+    
+    <!-- Find and run your perfect pub -->
+    <div class="user-dash-pub-wrap">
+      <div class="pub-finder-banner flush--bottom ng-scope" ng-controller="FindAndRunAPub">
+        <div class="grid">
+          <div class="grid__item portable-one-whole desk-six-twelfths sit--middle push-half--bottom">
+            <label class="gamma flush soft-half--left weight--bold brand-font sit--text-top homepage-find-pub" for="searchPub">Find and run your perfect pub</label>
+          </div><!--
+      
+       --><div class="grid__item portable-one-whole desk-six-twelfths flush--bottom">
+            <div class="pub-finder-banner__form-wrap">
+              <input name="searchPub" ng-model="searchValue"
+                class="text-input pub-finder-banner__text-input placeholder ng-pristine ng-valid" id="searchPub" type="text"
+                placeholder="Search by town or postcode">
+              <input id="pubSearchButton" class="btn btn--small btn--blue btn--pub-finder-banner js-pub-search" type="button" value="Search" ng-click="submitSearch()">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+    <!-- Featured Pubs Carousel -->
+    <div class="featuredPubs grid" data-ui-component="homepage-row-featured-pubs">
+      <div>
+        <div class="carousel ng-scope ng-binding carousel-slide" id="pubs-carousel-items"
+          ng-controller="FeaturedPubsCarouselController" data-transition="slide" style="visibility: visible;">
+    
+          <div data-carousel-slide="" class="carousel-item carousel-active">
+            <div id="featured-repeat-div" ng-repeat="pub in slidesArray track by $index"
+              class="grid__item ng-scope palm-one-whole lap-one-half desk-one-third" data-ng-class="selectedClass"
+              on-finish-render="">
+              <div class="js-pub-carousel pub-carousel drawer">
+                <a ng-href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/kings-head-dursley.aspx"
+                  class="pub-link"
+                  href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/kings-head-dursley.aspx">
+                  <img
+                    ng-src="https://www.eipublicanpartnerships.com/run-a-pub/pubs/Main%20Images/024759_1.jpg?width=156&amp;height=103"
+                    alt="Kings Head"
+                    src="https://www.eipublicanpartnerships.com/run-a-pub/pubs/Main%20Images/024759_1.jpg?width=156&amp;height=103">
+                  <img ng-init="Flash = GetFlashImageSrcs(pub)" ng-src="" ng-show="Flash.PrimaryFlashSmall"
+                    class="primary-flash ng-hide">
+                  <img ng-src="" ng-show="Flash.SecondaryFlashSmall" class="secondary-flash ng-hide">
+                </a>
+    
+                <div class="pub-carousel__details soft--sides taphover" ng-class="pub.ShowDetail ? 'auto-height' : ''">
+                  <a ng-href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/kings-head-dursley.aspx"
+                    class="pub-link"
+                    href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/kings-head-dursley.aspx">
+                    <small class="pub-info-more float--right visuallyhidden--palm">i</small>
+                    <h4 class="pub-carousel__name"><strong class="ng-binding">Kings Head</strong></h4>
+                    <p class="pub-carousel__address ng-binding" ng-hide="pub.ShowDetail">53-75 Parsonage Street, Dursley,
+                      <span class="ng-binding">GL11 4BP</span>
+                    </p>
+                    <div class="js-pub-carousel__additional pub-carousel__additional">
+                      <p><strong class="ng-binding">Retail Partnership Tenancy</strong></p>
+                      <p ng-show="pub.Agreement === 'Commercial Lease (Free of Tie)'" class="ng-hide"><strong>Guide Rent:
+                        </strong>Offers invited</p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment'" class="ng-binding ng-hide"><strong>Asking
+                          Price:</strong> £0.00</p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactType"
+                        class="ng-hide"><strong class="ng-binding">:</strong></p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactName"
+                        class="ng-hide"><strong class="ng-binding"></strong></p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactNumber"
+                        class="ng-hide"><strong class="ng-binding"></strong></p>
+    
+                      <p ng-show="Pub.Agreement === 'Retail Partnership Tenancy' || Pub.Agreement === 'Partnership Incentive Lease'  || Pub.Agreement === 'Partnership Investment Lease'"
+                        class="ng-binding ng-hide"><strong>Potential Turnover:</strong> 279k pa</p>
+                      <p ng-show="pub.Agreement === 'Retail Partnership Tenancy' || pub.Agreement === 'Partnership Incentive Lease' || pub.Agreement === 'Partnership Investment Lease'"
+                        class="ng-binding"><strong>Guide Rent:</strong> £10,000.00 pa</p>
+                      <p ng-show="pub.Agreement === 'Beacon Retail Partnership Tenancy'" class="ng-binding ng-hide">
+                        <strong>Typical Turnover:</strong> 279k pa</p>
+                      <p ng-show="pub.Agreement === 'Beacon Retail Partnership Tenancy'" class="ng-binding ng-hide">
+                        <strong>Average Rent:</strong> £10,000.00 pa</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--
+          -->
+            <div id="featured-repeat-div" ng-repeat="pub in slidesArray track by $index"
+              class="grid__item ng-scope palm-one-whole lap-one-half desk-one-third carousel-item-next"
+              data-ng-class="selectedClass" on-finish-render="">
+              <div class="js-pub-carousel pub-carousel drawer">
+                <a ng-href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/teddington-hands-inn-teddington.aspx"
+                  class="pub-link"
+                  href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/teddington-hands-inn-teddington.aspx">
+                  <img
+                    ng-src="https://www.eipublicanpartnerships.com/run-a-pub/pubs/Main%20Images/025422_1.jpg?width=156&amp;height=103"
+                    alt="Teddington Hands Inn"
+                    src="https://www.eipublicanpartnerships.com/run-a-pub/pubs/Main%20Images/025422_1.jpg?width=156&amp;height=103">
+                  <img ng-init="Flash = GetFlashImageSrcs(pub)"
+                    ng-src="/_layouts/15/Brightstarr.EI.Intranet/img/flash_free_of_tie_offers_small.png"
+                    ng-show="Flash.PrimaryFlashSmall" class="primary-flash"
+                    src="/_layouts/15/Brightstarr.EI.Intranet/img/flash_free_of_tie_offers_small.png">
+                  <img ng-src="" ng-show="Flash.SecondaryFlashSmall" class="secondary-flash ng-hide">
+                </a>
+    
+                <div class="pub-carousel__details soft--sides taphover" ng-class="pub.ShowDetail ? 'auto-height' : ''">
+                  <a ng-href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/teddington-hands-inn-teddington.aspx"
+                    class="pub-link"
+                    href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/teddington-hands-inn-teddington.aspx">
+                    <small class="pub-info-more float--right visuallyhidden--palm">i</small>
+                    <h4 class="pub-carousel__name"><strong class="ng-binding">Teddington Hands Inn</strong></h4>
+                    <p class="pub-carousel__address ng-binding" ng-hide="pub.ShowDetail">Evesham Road, Teddington,
+                      Tewkesbury,
+                      <span class="ng-binding">GL20 8NE</span>
+                    </p>
+                    <div class="js-pub-carousel__additional pub-carousel__additional">
+                      <p><strong class="ng-binding">Retail Partnership Tenancy</strong></p>
+                      <p ng-show="pub.Agreement === 'Commercial Lease (Free of Tie)'" class="ng-hide"><strong>Guide Rent:
+                        </strong>Offers invited</p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment'" class="ng-binding ng-hide"><strong>Asking
+                          Price:</strong> £0.00</p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactType"
+                        class="ng-hide"><strong class="ng-binding">:</strong></p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactName"
+                        class="ng-hide"><strong class="ng-binding"></strong></p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactNumber"
+                        class="ng-hide"><strong class="ng-binding"></strong></p>
+    
+                      <p ng-show="Pub.Agreement === 'Retail Partnership Tenancy' || Pub.Agreement === 'Partnership Incentive Lease'  || Pub.Agreement === 'Partnership Investment Lease'"
+                        class="ng-binding ng-hide"><strong>Potential Turnover:</strong> 602k pa</p>
+                      <p ng-show="pub.Agreement === 'Retail Partnership Tenancy' || pub.Agreement === 'Partnership Incentive Lease' || pub.Agreement === 'Partnership Investment Lease'"
+                        class="ng-binding"><strong>Guide Rent:</strong> £45,000.00 pa</p>
+                      <p ng-show="pub.Agreement === 'Beacon Retail Partnership Tenancy'" class="ng-binding ng-hide">
+                        <strong>Typical Turnover:</strong> 602k pa</p>
+                      <p ng-show="pub.Agreement === 'Beacon Retail Partnership Tenancy'" class="ng-binding ng-hide">
+                        <strong>Average Rent:</strong> £45,000.00 pa</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--
+          -->
+            <div id="featured-repeat-div" ng-repeat="pub in slidesArray track by $index"
+              class="grid__item ng-scope palm-one-whole lap-one-half desk-one-third" data-ng-class="selectedClass"
+              on-finish-render="">
+              <div class="js-pub-carousel pub-carousel drawer">
+                <a ng-href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/street-inn-street.aspx"
+                  class="pub-link"
+                  href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/street-inn-street.aspx">
+                  <img
+                    ng-src="https://www.eipublicanpartnerships.com/run-a-pub/pubs/Main%20Images/034738_1.jpg?width=156&amp;height=103"
+                    alt="Street Inn"
+                    src="https://www.eipublicanpartnerships.com/run-a-pub/pubs/Main%20Images/034738_1.jpg?width=156&amp;height=103">
+                  <img ng-init="Flash = GetFlashImageSrcs(pub)" ng-src="" ng-show="Flash.PrimaryFlashSmall"
+                    class="primary-flash ng-hide">
+                  <img ng-src="" ng-show="Flash.SecondaryFlashSmall" class="secondary-flash ng-hide">
+                </a>
+    
+                <div class="pub-carousel__details soft--sides taphover" ng-class="pub.ShowDetail ? 'auto-height' : ''">
+                  <a ng-href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/street-inn-street.aspx"
+                    class="pub-link"
+                    href="https://www.eipublicanpartnerships.com/run-a-pub/pubs/pages/street-inn-street.aspx">
+                    <small class="pub-info-more float--right visuallyhidden--palm">i</small>
+                    <h4 class="pub-carousel__name"><strong class="ng-binding">Street Inn</strong></h4>
+                    <p class="pub-carousel__address ng-binding" ng-hide="pub.ShowDetail">1-3 Somerton Road, Street,
+                      <span class="ng-binding">BA16 0DR</span>
+                    </p>
+                    <div class="js-pub-carousel__additional pub-carousel__additional">
+                      <p><strong class="ng-binding">Retail Partnership Tenancy</strong></p>
+                      <p ng-show="pub.Agreement === 'Commercial Lease (Free of Tie)'" class="ng-hide"><strong>Guide Rent:
+                        </strong>Offers invited</p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment'" class="ng-binding ng-hide"><strong>Asking
+                          Price:</strong> £0.00</p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactType"
+                        class="ng-hide"><strong class="ng-binding">:</strong></p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactName"
+                        class="ng-hide"><strong class="ng-binding"></strong></p>
+                      <p ng-show="pub.Agreement === 'Lease Assignment' &amp;&amp; pub.AssignmentContactNumber"
+                        class="ng-hide"><strong class="ng-binding"></strong></p>
+    
+                      <p ng-show="Pub.Agreement === 'Retail Partnership Tenancy' || Pub.Agreement === 'Partnership Incentive Lease'  || Pub.Agreement === 'Partnership Investment Lease'"
+                        class="ng-binding ng-hide"><strong>Potential Turnover:</strong> 358k pa</p>
+                      <p ng-show="pub.Agreement === 'Retail Partnership Tenancy' || pub.Agreement === 'Partnership Incentive Lease' || pub.Agreement === 'Partnership Investment Lease'"
+                        class="ng-binding"><strong>Guide Rent:</strong> £32,000.00 pa</p>
+                      <p ng-show="pub.Agreement === 'Beacon Retail Partnership Tenancy'" class="ng-binding ng-hide">
+                        <strong>Typical Turnover:</strong> 358k pa</p>
+                      <p ng-show="pub.Agreement === 'Beacon Retail Partnership Tenancy'" class="ng-binding ng-hide">
+                        <strong>Average Rent:</strong> £32,000.00 pa</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <nav class="carousel-nav carousel-item carousel-item-prev carousel-item-next"><a href="#prev"
+              class="prev carousel__ctrl carousel__ctrl--left" aria-hidden="true" title="Previous">&nbsp;</a><a href="#next"
+              class="next carousel__ctrl carousel__ctrl--right" aria-hidden="true" title="Next">&nbsp;</a>
+          </nav>
+        </div>
+        <input type="hidden" name="ctl00$PlaceHolderMain$g_8c0e767a_61fa_4a83_be68_ba81b7485f0a$featuredDivClass"
+          id="ctl00_PlaceHolderMain_g_8c0e767a_61fa_4a83_be68_ba81b7485f0a_featuredDivClass"
+          value="palm-one-whole lap-one-half desk-one-third">
+      </div>
+    </div>
+    
+    
+    <!-- Favourites -->
+    <div data-ng-include="'_layouts/15/Brightstarr.EI.Intranet/app/html/my-favourites.html'" class="pub-favorites ng-scope">
+      <div class="section-title larger medium-black collapsible indicator-left empty ng-scope"
+        data-ng-if="!favourites || favourites.length == 0">
+        <span><strong>Favourites</strong> <a href="/run-a-pub/Pages/pub-search.aspx" style="display: inline;">(click here
+            to add a favourite)</a></span>
+      </div>
+      <div class="section-title larger medium-black collapsible indicator-left ng-scope ng-hide"
+        data-ng-class="expandFavourites ? 'expanded' : ''" data-ng-show="favourites &amp;&amp; favourites.length >= 1"
+        data-ng-click="expandFavourites=!expandFavourites">
+        <a href="#" class="ng-binding">Favourites (0)</a>
+      </div>
+    </div>
+    
+    <section class="ba pv5 bg-black-10 tc">
+      <p class="mb0">Publican Recruitment</p>
+      <p class="f3">03333 20 00 36</p>
+    </section>

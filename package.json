@@ -1,0 +1,21 @@
+{
+  "name": "eipp-fractal",
+  "version": "0.1.0",
+  "fractal": {
+    "main": "fractalfile.js"
+  },
+  "scripts": {
+    "scss": "node-sass --watch --output-style compressed scss/ -o public/css/",
+    "serve": "fractal start --sync",
+    "start": "npm run scss | npm run serve",
+    "build": "fractal build"
+  },
+  "dependencies": {
+    "@frctl/fractal": "^1.1.4",
+    "@frctl/mandelbrot": "^1.1.0",
+    "inuitcss": "^6.0.0-beta.5"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

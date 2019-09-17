@@ -1,0 +1,17 @@
+label: Admin screen
+context:
+  primaryNav: '@global-nav'
+
+  people:
+    - name: Bob Smith
+      role:  Publican
+
+    - name: Jane Williams
+      role:  Bar Manager
+
+    - name: Bob Builder
+      role:  Bar Staff
+
+    - name: Sanjay Patki
+      role:  Financial only
+

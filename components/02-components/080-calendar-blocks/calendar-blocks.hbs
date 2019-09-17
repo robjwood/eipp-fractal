@@ -1,0 +1,8 @@
+<div class="o-card">
+  {{# calendarBlocks }}
+  <li class="o-card__item">
+    <h3><div class="week-day">{{ calendarWeekDay }}</div><span class="calendar-day">{{ calendarDay }}</span><span class="calendar-month">{{ calendarMonth }}</span></h3>
+    <a href="{{ calendarUrl }}" class="{{ calendarlinkClass }}">{{ calendarlinkLabel }}</a>
+  </li>
+  {{/ calendarBlocks }}
+</div>

@@ -1,0 +1,88 @@
+{{> @header-publican }}
+
+<style>
+  .grid-wrapper-contentpage-templateA .homepage-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1%
+  }
+
+  .grid-wrapper-contentpage-templateA .homepage-blocks .homepage-blocks__item {
+      /* margin:initial; */
+      /* width:initial; */
+    }
+  }
+
+  .grid-wrapper-contentpage-templateB .palm-one-half,.grid-wrapper-contentpage-templateB .palm-two-quarters,.grid-wrapper-contentpage-templateB .palm-three-sixths,.grid-wrapper-contentpage-templateB .palm-four-eighths,.grid-wrapper-contentpage-templateB .palm-five-tenths,.grid-wrapper-contentpage-templateB .palm-six-twelfths {
+    padding-left: initial;
+    width: initial
+  }
+
+  @media only screen and (min-width: 520px) {
+    .grid-wrapper-contentpage-templateB .desk-one-quarter,.grid-wrapper-contentpage-templateB .desk-two-eighths,.grid-wrapper-contentpage-templateB .desk-three-twelfths,.grid-wrapper-contentpage-templateB .desk-one-half,.grid-wrapper-contentpage-templateB .desk-two-quarters,.grid-wrapper-contentpage-templateB .desk-three-sixths,.grid-wrapper-contentpage-templateB .desk-four-eighths,.grid-wrapper-contentpage-templateB .desk-five-tenths,.grid-wrapper-contentpage-templateB .desk-six-twelfths {
+      padding-left:initial;
+      width: initial
+    }
+  }
+
+  .grid-wrapper-section-homepage .greybox,.graybox,.grid-wrapper-contentpage-templateB .greybox,.graybox {
+    border: none !important
+  }
+</style>
+
+<div class="o-wrapper">
+  <p>Account picker placeholder</p>
+  {{> @tabs }}
+
+  {{ pageBlocks }}
+
+  <p>Banner</p>
+
+  <div class="o-card">
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Agreement options summary</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Retail Partnership &#8203;Tenancy</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Beacon&nbsp;Retail Partnership&nbsp;Tenancy</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Partnersh&#8203;ip Incentive Lease&#8203;</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Partnersh&#8203;ip Investment Lease&#8203;</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Lease Assignment&#8203;</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">Commercial&nbsp;Lease (Free&nbsp;of&nbsp;Tie)&#8203;</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">A guide to our agreements&#8203;</a>
+      </h3>
+    </div>
+    <div class="o-card__item">
+      <h3 class="homepage-blocks__heading">
+        <a href="#">How to apply&#8203;</a>
+      </h3>
+    </div>
+  </div>
+</div>

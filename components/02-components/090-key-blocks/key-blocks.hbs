@@ -1,0 +1,16 @@
+<ul class="c-key-block">
+  {{# keyBlocks }}
+  <li class="c-key-block__item {{ bgColour }}">
+    <div class="c-key-block__img-wrap">
+      <img src="{{ imgSrc }}" alt="">
+    </div>
+    <div class="c-key-block__copy">
+      <p class="{{ textColour }}">{{ text }}</p>
+    </div>
+    <a href="{{ url }}" class="c-key-block__link">
+      <img src="{{ linkImg }}" />
+    </a>
+
+  </li>
+  {{/ keyBlocks }}
+</ul>

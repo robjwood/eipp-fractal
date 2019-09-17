@@ -1,0 +1,25 @@
+title: Main page
+context:
+  
+  h1Text: Heading 1
+  h2Text: Heading 2
+  h3Text: Heading 3
+  h4Text: Heading 4
+  h5Text: Heading 5
+  h6Text: Heading 6
+
+
+  # Label data
+  labelFor: search
+  labelExtra-class: 
+  labelText: Find your perfect pub
+  
+  # Input data
+  inputName: search
+  inputValue: 
+  inputID: search
+  inputPlaceholder: Find a pub 
+
+  # Button data
+  buttonColour: bg-dark-blue b--dark-blue white
+  buttonText: Search

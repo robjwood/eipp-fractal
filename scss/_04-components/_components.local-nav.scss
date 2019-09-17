@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    $LOCAL NAVIGATION
+\*------------------------------------*/
+
+
+.c-nav-local {
+  margin-left: 0;
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  // Applies generic styles to ALL links in the menu.
+  &__link {
+    display: table;
+    font-size: 12px;
+    text-decoration: none;
+    width: 100%;
+
+      &:hover {opacity: 0.6;}
+  }
+
+  // The main header for the local navigation
+  &__header {
+    clear: both;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+
+  // Level 2
+  &__level-2-link {
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &.has-dropdown {
+      overflow: hidden;
+      position: relative;
+      padding-right: 45px;
+    }
+
+    &.has-dropdown:before { 
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+
+    &.has-dropdown:after { 
+      content: '+';
+      font-weight: bold;
+      text-align: center;
+      position: absolute;
+      right: 0;
+    }  
+  }
+}

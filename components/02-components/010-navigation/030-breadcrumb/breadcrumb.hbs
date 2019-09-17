@@ -1,0 +1,13 @@
+<div class="breadcrumb">
+  <a title="Home" class="breadcrumb__item breadcrumb__link breadcrumb__root-crumb" href="/">Home</a>
+  <svg viewBox="0 0 32 32" class="breadcrumb__separator" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
+  </svg>
+  
+  {{# breadCrumbNav }}
+  <a class="breadcrumb__item breadcrumb__link" href="{{ url }}">{{ linkLabel }}</a>
+  <svg viewBox="0 0 32 32" class="breadcrumb__separator" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
+  </svg>
+  {{/ breadCrumbNav }}
+</div>

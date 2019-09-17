@@ -1,0 +1,27 @@
+/* Image blocks
+===========================================
+===========================================*/
+
+.o-img-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+  @include mq-m {
+    max-width: $u8;
+  }
+
+  @include mq-m {
+    max-width: $u7 * 2.5;
+  }
+
+}
+
+  .o-img-block__item {
+    flex: 1 1 170px;
+    padding: $u1 / 2;
+    
+    > img {
+      width: 100%;
+    }
+  }

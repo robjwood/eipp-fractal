@@ -1,0 +1,123 @@
+/* COMPONENTS
+===========================================
+===========================================*/
+
+/* NAVIGATION */
+
+[role="navigation"] {
+  max-width: 960px;
+  margin-right: auto;
+  margin-bottom: $u4;
+  margin-left: auto;
+  overflow: hidden;
+  
+  // @include mq-m {
+  //   padding: 0 $u1;
+  // }
+}
+
+.c-global-nav {
+  display: table;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+
+
+
+  // Elements
+  .c-global-nav__item {
+    border-bottom: 1px solid #eee;
+    list-style-type: none;
+    vertical-align: middle;
+    
+    @include mq-m {
+      border-bottom: 1px solid #eee;
+      display: table-cell;
+      // padding: 0 $u1;
+      text-align: center;
+      width: $u6;
+
+      &:last-child {
+        border-right: inherit;
+      }
+    }
+
+
+
+  }
+
+  .c-global-nav__logo {
+    width: $u6;
+  }
+
+  .c-global-nav__link {
+    display: block;
+    font-size: $f6;
+    padding-top: $u3;
+    padding-right: $u1;
+    padding-bottom: $u3;
+    padding-left: $u1;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+// .c-global-nav__main {
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding-left: 0;
+//   margin-top: 0;
+//   margin-right: calc(#{$u1} * -1 );  /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//   margin-bottom: 0;
+//   margin-left: calc(#{$u1} * -1 );   /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+
+//     @include mq-m {
+//       margin-right: calc(#{$u2} * -1 );  /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//       margin-left: calc(#{$u2} * -1 );   /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//     }
+// }
+
+//   .c-global-nav__item {
+//     align-items: center;
+//     display: flex;
+//     list-style-type: none; 
+//   }
+
+//     .c-global-nav__link {
+//       color: black;
+//       font-weight: bold;
+//       padding: $u1;
+//       text-decoration: none;
+
+//       &:visited {
+//         color: black;
+//       }
+
+//       &:hover {
+//         background: lightBlue;
+//       }
+
+//       @include mq-m {
+//         padding: $u2
+//       }
+//     }
+
+//     .c-global-nav__link--logo {
+//       &:hover {
+//         background: initial;
+//         border-bottom-width: initial;
+//         border-bottom-style: initial;
+//         margin-bottom: initial;
+//       }
+//     }
+

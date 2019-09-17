@@ -1,0 +1,101 @@
+/* GLOBALS
+===========================================
+===========================================*/
+
+
+/*
+
+1. Global (HTML) styles and enforced inheritance.
+
+These are optional.
+
+*/
+
+// 1. GLOBAL
+// ----------------------
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  font-family: inherit;
+  line-height: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 0.95rem;
+  overflow-y: scroll; /* [2] */
+  min-height: 100%;   /* [3] */
+}
+
+body {
+  background-color: rgba(255,255,255,1);
+  color: $Black;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+body:after {
+  background: red;
+  border-radius: 2px;
+  color: white;
+  font-size: $u1;
+  content: "Small screen";
+  letter-spacing: 2px;
+  opacity: 0.8;
+  padding: $u1 $u2;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  right: 0;
+  
+  @include mq-ns {
+    background: blue;
+    content: "'Not small' screen";
+  }
+
+  @include mq-m {
+    background: green;
+    content: "Medium screen";
+  }
+
+  @include mq-l {
+    background: black;
+    content: "Large screen";
+  }
+}
+
+
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+
+/**
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+
+img[width], /* [1] */
+img[height] {  /* [1] */
+  max-width: none;
+}
+
+
+
+
+// * + h1,
+// * + h2,
+// * + h3,
+// * + h4,
+// * + h5,
+// * + h6 {
+//   margin-bottom: $u1;
+// }

@@ -1,0 +1,244 @@
+/* DROP-DOWN MENU
+========================================================================== */
+
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+}
+
+ul {
+  // background: darkorange;
+	// list-style: none;
+	// margin: 0;
+	// padding-left: 0;
+}
+
+li {
+	// color: #fff;
+  // background: darkorange;
+	// display: block;
+	// float: left;
+	// padding: 1rem;
+	// position: relative;
+	// text-decoration: none;
+  // transition-duration: 0.5s;
+}
+  
+li a {
+  // color: #fff;
+}
+
+li:hover {
+	// background: red;
+	// cursor: pointer;
+}
+
+ul li ul {
+	background: $Blue50;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
+}
+
+
+//   .c-btn {
+//     border-bottom-width: 0.2em;
+//     border-bottom-style: solid;
+//     border-radius: 2px;
+//     display: inline-block;
+//     text-decoration: none;
+
+//     &:hover {
+//       opacity: 0.8;
+//     }
+
+//     &:focus {
+//       outline: 2px solid yellow;
+//     }
+
+//     &:visited {
+//       color: white;
+//     }
+//   }
+
+//   // Button colours
+//   .c-btn--primary {
+//     background-color: $colour-primary;
+//     border-bottom-color: darken( $colour-primary, 5% );
+
+//     &:hover,
+//     &:active {
+//       border-bottom-color: darken( $colour-primary, 5% );
+//     }
+
+//     &:focus {
+//       background: darken( $colour-primary, 5% );
+//     }
+//   }
+
+//   .c-btn--secondary {
+//     background-color: $colour-secondary;
+//     border-bottom-color: darken( $colour-secondary, 5% );
+
+//     &:hover,
+//     &:active {
+//       border-bottom-color: darken( $colour-secondary, 5% );
+//     }
+
+//     &:focus {
+//       background: darken( $colour-secondary, 5% );
+//     }   
+//   }
+
+//   .c-btn--tertiary {
+//     background-color: $colour-tertiary;
+//     border-bottom-color: darken( $colour-tertiary, 5% );
+
+//     &:hover,
+//     &:active {
+//       border-bottom-color: darken( $colour-tertiary, 5% );
+//     }
+
+//     &:focus {
+//       background: darken( $colour-tertiary, 5% );
+//     }
+//   }
+
+
+//   .c-btn--special {
+//     background-color: $colour-special;
+//     border-bottom-color: darken( $colour-special, 5% );
+
+//     &:hover,
+//     &:active {
+//       border-bottom-color: darken( $colour-special, 5% );
+//     }
+
+//     &:focus {
+//       background: darken( $colour-special, 5% );
+//     }
+//   }
+
+// /* Size variants
+// ========================================================================== */
+
+//   .c-btn--s {
+//     font-size: $f6;
+//     padding: calc(#{$u1} / 2) $u1;
+//     // padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+//   }
+
+//   .c-btn--m {
+//     padding: $u1 $u3;
+
+//     // font-size: $inuit-font-size-small;
+//     // padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+//   }
+
+//   .c-btn--l {
+//     font-size: $f5;
+//     padding: $u2 $u4;
+//   }
+
+//   .c-btn--xl {
+//     font-size: $f4;
+//     padding: $u3 $u5;
+//   }
+
+
+  
+
+
+
+
+
+// /* Ghost buttons
+//    ========================================================================== */
+
+// /**
+//  * Ghost buttons have see-through backgrounds and are bordered.
+//  */
+
+// // $btn-ghost-border-width: 2px;
+
+// .c-btn--ghost {
+//   // border: $btn-ghost-border-width solid currentColor;
+//   // padding: ($inuit-global-spacing-unit-small - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
+
+//   &,
+//   &:hover,
+//   &:active,
+//   &:focus {
+//     background: none;
+//   }
+
+//   &.c-btn--small {
+//     // padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
+//   }
+
+//   &.c-btn--large {
+//     // padding: ($inuit-global-spacing-unit - $btn-ghost-border-width) ($inuit-global-spacing-unit-large - $btn-ghost-border-width);
+//   }
+
+//   &.c-btn--primary {
+//     // color: $Blue50;
+
+//     &:hover,
+//     &:focus {
+//       // color: $Blue2;
+//     }
+
+//   }
+
+//   &.c-btn--secondary {
+//     // color: $Aqua;
+
+//     &:hover,
+//     &:focus {
+//       // color: $Aqua2;
+//     }
+
+//   }
+
+//   &.c-btn--tertiary {
+//     // color: $Purple;
+
+//     &:hover,
+//     &:focus {
+//       // color: $Purple2;
+//     }
+
+//   }
+
+//   &.c-btn--special {
+//     // color: $Gold50;
+
+//     &:hover,
+//     &:focus {
+//       // color: $Gold2;
+//     }
+//   }
+
+
+// }

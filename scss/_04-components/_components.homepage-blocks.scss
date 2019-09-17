@@ -1,0 +1,45 @@
+/* HOMEPAGE BLOCKS
+===========================================
+===========================================*/
+
+/* For the content editor blocks */
+
+
+/* For IE11. These are automatically overridden by */
+.homepage-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .homepage-blocks__item {
+    border: 1px solid #bababa;
+    margin: 0 5px 5px 0;
+    width: 32%;
+  }
+
+  .homepage-blocks__item a {
+    color: $Black;
+    text-decoration: none;
+  }
+
+  .homepage-blocks__heading {
+      font-size: $f4;
+      margin-bottom: 0;
+      padding: 5px; 
+    }
+
+
+
+// Feature detection for browsers that support CSS grid. THese will override the setting from above.
+@supports (display: grid) {
+  .homepage-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+  }
+
+  .homepage-blocks__item {
+    margin: initial;
+    width: initial;
+  }
+}

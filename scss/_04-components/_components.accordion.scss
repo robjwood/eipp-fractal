@@ -1,0 +1,115 @@
+/* ACCORDIONS
+===========================================
+
+===========================================*/
+
+details[open] {
+  .c-accordion {
+    // transition: all 200ms ease;
+  
+    &:after {
+      content: '';
+      background: url('/img/icon-toggle-minus.svg') 0 0 no-repeat;
+      background-size: contain;
+      display: inline-block;
+      // transition: all 200ms ease;
+      width: 32px;
+      height: 32px;
+      }
+  }
+}
+
+
+.c-accordion {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: $u1;
+  padding: $u2 $u1;
+  // list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+  // color: transparent;
+
+  * { margin-bottom: 0; }
+  &:hover {cursor: pointer; }
+  &::-webkit-details-marker { display: none; }
+  &:focus { outline: 1px dashed black; }
+  
+  &:after {
+    content: '';
+    background: url('/img/icon-toggle-plus.svg') 0 0 no-repeat;
+    background-size: contain;
+    display: inline-block;
+    // transition: all 200ms ease;
+    width: 32px;
+    height: 32px;
+  }
+
+}
+
+// svg path,
+// svg rect {
+//   fill: red;
+// }
+
+// .c-accordion:-webkit-details-marker {
+//   color: transparent;
+//   list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+// }
+
+
+// .c-accordion:focus {
+//   list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+// }
+
+  .c-accordion__icon {
+    text-align: center;
+    margin-right: $u1;
+    width: 35px;
+  }
+
+  .c-accordion__title {
+    font-family: $BrandFont;
+    font-size: $f4;
+    flex-grow: 1;
+  }
+
+  .c-accordion__control {
+    text-align: center;
+  }
+
+
+
+  
+
+// The 'new' way of doing things
+.c-accordion--toggle.closed {
+
+  &:after {
+    content: '';
+    background: url('/img/icon-toggle-plus.svg') 0 0 no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.c-accordion--toggle {
+
+  &:hover {cursor: pointer; }
+  &::-webkit-details-marker { display: none; }
+  &:focus { outline: 1px dashed $Grey30; }
+
+  &:after {
+    content: '';
+    background: url('/img/icon-toggle-minus.svg') 0 0 no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width:26px;
+    height: 26px;
+  }
+}
+
+.closed + .js-accordion__content {
+  display: none;
+}  

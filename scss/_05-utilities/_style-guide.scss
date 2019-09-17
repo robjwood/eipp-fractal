@@ -1,0 +1,30 @@
+/* STYLE GUIDE
+===========================================
+===========================================*/
+
+// Apply an ouline
+.u-outline {
+  outline: 8px solid white;
+  margin: 4px 8px;  
+
+  &:hover {
+    // outline: 8px solid #00abd6;
+    // outline-offset: 0px;
+  }
+
+}
+
+
+/* STYLE GUIDE
+===========================================
+===========================================*/
+
+// // Apply an ouline
+// .u-outline {
+//   margin: 4px 8px;  
+
+//   &:hover {
+//     outline: 8px solid #00abd6;
+//     outline-offset: 0px;
+//   }
+// }

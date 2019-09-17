@@ -1,0 +1,10 @@
+title: Headings
+context:
+  h1Text: Heading 1
+  h2Text: Heading 2
+  h3Text: Heading 3
+  h4Text: Heading 4
+  h5Text: Heading 5
+  h6Text: Heading 6
+
+body: <p>fsdfsdfsd</p>

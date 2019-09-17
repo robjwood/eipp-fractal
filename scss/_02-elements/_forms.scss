@@ -1,0 +1,21 @@
+/* FORMS
+===========================================
+===========================================*/
+
+fieldset {
+  border: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  line-height: $lh-copy;
+}
+
+input, textarea, select {
+  border: 1px solid silver;
+  display: block;
+  font-size: $f5;
+  padding: $u1;
+}

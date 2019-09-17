@@ -1,0 +1,10 @@
+/* TOGGLES
+===========================================
+===========================================*/
+
+.o-toggle-trigger::before {
+  content: "+";
+  font-size: 32px;
+  line-height: 0;
+  margin-right: 10px;
+}

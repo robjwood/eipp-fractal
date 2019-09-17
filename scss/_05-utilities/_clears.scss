@@ -1,0 +1,40 @@
+/*
+
+   CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
+
+*/
+
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.cf:before,
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf {       *zoom: 1; }
+
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.cn { clear: none; }
+
+@media (min-width: #{$not-small-width}) {
+  .cl-ns { clear: left; }
+  .cr-ns { clear: right; }
+  .cb-ns { clear: both; }
+  .cn-ns { clear: none; }
+}
+
+@media (min-width: #{$medium-width}) {
+  .cl-m { clear: left; }
+  .cr-m { clear: right; }
+  .cb-m { clear: both; }
+  .cn-m { clear: none; }
+}
+
+@media (min-width: #{$large-width}) {
+  .cl-l { clear: left; }
+  .cr-l { clear: right; }
+  .cb-l { clear: both; }
+  .cn-l { clear: none; }
+}

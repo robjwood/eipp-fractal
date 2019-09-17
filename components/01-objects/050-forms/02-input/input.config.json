@@ -1,0 +1,11 @@
+{
+  "status": "wip",
+  "context": {
+    "input": {
+      "name": "default",
+      "value": "",
+      "ID": "default",
+      "placeholder": "Enter something here"
+    }
+  }
+}

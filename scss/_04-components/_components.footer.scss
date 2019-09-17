@@ -1,0 +1,17 @@
+/* COMPONENTS
+===========================================
+===========================================*/
+
+/* FOOTER */
+.c-footer-main {
+  border-top: 1px solid black;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-left: 0;
+}
+
+.c-footer-main__item {
+  display: inline-block;
+  margin-right: $u3;
+}

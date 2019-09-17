@@ -1,0 +1,63 @@
+{{> @header }}
+
+<div class="o-wrapper u-pb4">
+
+  <h1>People linked to this pub</h1>
+
+  <table class="u-mb2">
+    <tr>
+      <thead>
+        <th class="u-bg-grey u-white">Name</th>
+        <th class="u-bg-grey u-white">Role</th>
+        <th class="u-bg-grey u-white">Responsibilities</th>
+      </thead>
+    </tr>
+    {{# people }}
+    <tr>
+      <td>{{ name }}</td>
+      <td>{{ role }}</td>
+      <td><a href="#" class="underline">View responsibilities</a></td>
+    </tr>
+    {{/ people }}
+  </table>
+
+  <div class="u-flex u-justify-between u-items-center">
+    <p><a href="#">&lt; back to My Pub</a></p>
+    <p><a href="" class="c-btn c-btn--m c-btn--primary">Add person</a></p>
+  </div>
+
+  <ul id="example-1">
+    <li v-for="item in items">
+      \{{ item.message }}
+    </li>
+  </ul>
+
+  <div id="app">
+    <label for="name">Name:</label>
+    <input id="name" type="text" v-model="name" /> <!--v-model is doing the magic here-->
+    <p>\{{ name }}</p>
+  </div>
+
+</div>
+
+
+<script>
+  //this is a vue instance
+  new Vue({
+    //this targets the div id app
+    el: '#app',
+    data: {
+      name: '' //this stores data values for ‘name’
+    }
+  })
+
+  var example1 = new Vue({
+    el: '#example-1',
+    data: {
+      items: [
+        { message: 'Foo' },
+        { message: 'Bar' }
+      ]
+    }
+  })
+</script>

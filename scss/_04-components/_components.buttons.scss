@@ -1,0 +1,187 @@
+/* COMPONENTS
+===========================================
+===========================================*/
+
+/* Buttons
+========================================================================== */
+
+  .c-btn {
+    border-bottom-width: 0.2em;
+    border-bottom-style: solid;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: 2px solid yellow;
+    }
+
+    &:visited {
+      color: white;
+    }
+  }
+
+  // Button colours
+  .c-btn--primary {
+    background-color: $Gold50;
+    border-bottom-color: darken( $Gold50, 5% );
+
+    &:hover,
+    &:active {
+      border-bottom-color: darken( $Gold50, 5% );
+    }
+
+    &:focus {
+      background: darken( $Gold50, 5% );
+    }
+  }
+
+  .c-btn--secondary {
+    background-color: $Violet;
+    border-bottom-color: darken( $Violet, 5% );
+
+    &:hover,
+    &:active {
+      border-bottom-color: darken( $Violet, 5% );
+    }
+
+    &:focus {
+      background: darken( $Violet, 5% );
+    }   
+  }
+
+  .c-btn--tertiary {
+    background-color: $Aqua;
+    border-bottom-color: darken( $Aqua, 5% );
+
+    &:hover,
+    &:active {
+      border-bottom-color: darken( $Aqua, 5% );
+    }
+
+    &:focus {
+      background: darken( $Aqua, 5% );
+    }
+  }
+
+  .c-btn--quarternary {
+    background-color: $Pear;
+    border-bottom-color: darken( $Pear, 5% );
+
+    &:hover,
+    &:active {
+      border-bottom-color: darken( $Pear, 5% );
+    }
+
+    &:focus {
+      background: darken( $Pear, 5% );
+    }
+  }
+
+  
+/* Size variants
+========================================================================== */
+
+  .c-btn--s {
+    font-size: $f6;
+    padding: calc(#{$u1} / 1.3) $u2 calc(#{$u1} / 1.5);
+    // padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+  }
+
+  .c-btn--m {
+    padding: $u1 $u3;
+
+    // font-size: $inuit-font-size-small;
+    // padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+  }
+
+  .c-btn--l {
+    font-size: $f5;
+    padding: $u2 $u4;
+  }
+
+  .c-btn--xl {
+    font-size: $f4;
+    padding: $u3 $u5;
+  }
+
+
+  
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+// $btn-ghost-border-width: 2px;
+
+.c-btn--ghost {
+  // border: $btn-ghost-border-width solid currentColor;
+  // padding: ($inuit-global-spacing-unit-small - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  &.c-btn--small {
+    // padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
+  }
+
+  &.c-btn--large {
+    // padding: ($inuit-global-spacing-unit - $btn-ghost-border-width) ($inuit-global-spacing-unit-large - $btn-ghost-border-width);
+  }
+
+  &.c-btn--primary {
+    // color: $Blue50;
+
+    &:hover,
+    &:focus {
+      // color: $Blue2;
+    }
+
+  }
+
+  &.c-btn--secondary {
+    // color: $Aqua;
+
+    &:hover,
+    &:focus {
+      // color: $Aqua2;
+    }
+
+  }
+
+  &.c-btn--tertiary {
+    // color: $Purple;
+
+    &:hover,
+    &:focus {
+      // color: $Purple2;
+    }
+
+  }
+
+  &.c-btn--special {
+    // color: $Gold50;
+
+    &:hover,
+    &:focus {
+      // color: $Gold2;
+    }
+  }
+
+
+}
