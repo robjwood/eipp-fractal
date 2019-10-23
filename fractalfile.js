@@ -13,12 +13,14 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Eipp style guide');
+fractal.set('project.title', 'EIPP style guide');
 
 /*
  * Tell Fractal where to look for components.
  */
 fractal.components.set('path', path.join(__dirname, 'components'));
+fractal.components.engine('@frctl/nunjucks'); // use Nunjucks for components
+fractal.components.set('ext', '.njk'); // Change file extension for the view template
 
 /*
  * Tell Fractal where to look for documentation pages.
