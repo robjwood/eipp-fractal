@@ -1,8 +1,10 @@
-<select name="{{ select.name }}">
+<select name="{{ name }}">
   <option value="choose" selected>Please choose an option</option>
-  {{# select }}
-    <option value="{{ value }}">{{ text }}</option>
-  {{/ select }}
+
+  {% for item in select %}
+    <option value="{{ item.value }}">{{ item.text }}</option>
+  {% endfor %}
+
   </select>
 
 
