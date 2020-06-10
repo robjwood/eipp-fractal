@@ -8,6 +8,6 @@
 > npm run build
 
 
-# To deploy to netlify
+<!-- # To deploy to netlify
 
-netlifyctl.exe deploy -s eipp
+netlifyctl.exe deploy -s eipp -->
