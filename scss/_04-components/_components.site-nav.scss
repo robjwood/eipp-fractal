@@ -7,12 +7,12 @@
 [role="navigation"] {
   max-width: 960px;
   margin-right: auto;
-  margin-bottom: $u4;
+  margin-bottom: var(--u-xl);
   margin-left: auto;
   overflow: hidden;
   
   // @include mq-m {
-  //   padding: 0 $u1;
+  //   padding: 0 var(--u-s);
   // }
 }
 
@@ -35,9 +35,9 @@
     @include mq-m {
       border-bottom: 1px solid #eee;
       display: table-cell;
-      // padding: 0 $u1;
+      // padding: 0 var(--u-s);
       text-align: center;
-      width: $u6;
+      width: var(--u-3xl);
 
       &:last-child {
         border-right: inherit;
@@ -49,16 +49,16 @@
   }
 
   .c-global-nav__logo {
-    width: $u6;
+    width: var(--u-3xl);
   }
 
   .c-global-nav__link {
     display: block;
-    font-size: $f6;
-    padding-top: $u3;
-    padding-right: $u1;
-    padding-bottom: $u3;
-    padding-left: $u1;
+    font-size: var(--f-s);
+    padding-top: var(--u-l);
+    padding-right: var(--u-s);
+    padding-bottom: var(--u-l);
+    padding-left: var(--u-s);
     text-decoration: none;
   }
 
@@ -77,13 +77,13 @@
 //   flex-wrap: wrap;
 //   padding-left: 0;
 //   margin-top: 0;
-//   margin-right: calc(#{$u1} * -1 );  /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//   margin-right: calc(#{var(--u-s)} * -1 );  /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
 //   margin-bottom: 0;
-//   margin-left: calc(#{$u1} * -1 );   /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//   margin-left: calc(#{var(--u-s)} * -1 );   /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
 
 //     @include mq-m {
-//       margin-right: calc(#{$u2} * -1 );  /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
-//       margin-left: calc(#{$u2} * -1 );   /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//       margin-right: calc(#{var(--u-m)} * -1 );  /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
+//       margin-left: calc(#{var(--u-m)} * -1 );   /* Adding a negative margin using custom variables doesn't work so have to resort to using `calc` */
 //     }
 // }
 
@@ -96,7 +96,7 @@
 //     .c-global-nav__link {
 //       color: black;
 //       font-weight: bold;
-//       padding: $u1;
+//       padding: var(--u-s);
 //       text-decoration: none;
 
 //       &:visited {
@@ -108,7 +108,7 @@
 //       }
 
 //       @include mq-m {
-//         padding: $u2
+//         padding: var(--u-m)
 //       }
 //     }
 

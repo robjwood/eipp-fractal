@@ -1,0 +1,12 @@
+{% render '@header' %}
+
+<div class="o-wrapper">
+<ul class="c-card-wrap">
+{% for card in card %}
+  {% include '@cards' %}
+{% endfor %}
+</ul>
+
+{% render '@breadcrumb' %}
+</div>
+

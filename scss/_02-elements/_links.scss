@@ -3,12 +3,12 @@
 ===========================================*/
 
 a {
-  // color: $Blue50;
+  // color: var(--blue-500);
   text-decoration-skip: ink;
 }
 
 a:visited {
-  // color: $Blue50;
+  // color: var(--blue-500);
 }
 
 a:hover {

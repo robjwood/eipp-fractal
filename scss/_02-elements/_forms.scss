@@ -10,12 +10,11 @@ fieldset {
 
 label {
   display: block;
-  line-height: $lh-copy;
 }
 
 input, textarea, select {
   border: 1px solid silver;
   display: block;
-  font-size: $f5;
-  padding: $u1;
+  font-size: var(--f-m);
+  padding: var(--u-s);
 }

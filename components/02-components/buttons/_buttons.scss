@@ -1,0 +1,122 @@
+/* Buttons
+========================================================================== */
+
+  .c-btn {
+    background-color: transparent;
+    border-radius: var(--u-xs);
+    border-width: var(--u-xs);
+    border-style: solid;
+    border-color: transparent;
+    font-size: var(--f-1);
+    display: inline-block;
+    padding: var(--u-s) var(--u-m);
+    text-decoration: none;
+
+    &:visited {
+      // color: white;
+    }
+
+    &:focus {
+      outline-width: 0;
+      box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
+    }
+  }
+
+  
+  .c-btn--primary {
+    background-color: var(--gold-500);
+    color: var(--blue-700); 
+
+    &:hover,
+    &:focus {
+      background-color: var(--gold-300);
+      border-color: var(--gold-300);
+    }
+
+    &:active {
+      // border-bottom-color: lighten( var(--blue-500), 5% );
+    }
+
+  }
+
+  .c-btn--secondary {
+    color: var(--blue-700); 
+    border-color: var(--blue-500);
+
+    &:visited {
+      color: var(--blue-700);
+    }
+
+    &:hover,
+    &:focus {
+      // background-color: lighten( var(--blue-500), 25% );
+      border-color: var(--blue-200);
+    }
+
+    &:active {
+      // border-bottom-color: lighten( var(--blue-500), 5% );
+    }
+
+  }
+
+  // .c-btn--secondary {
+  //   background-color: var(--blue-500);
+  //   border-bottom-color: darken( var(--blue-500), 5% );
+
+  //   &:hover,
+  //   &:active {
+  //     border-bottom-color: darken( var(--blue-500), 5% );
+  //   }
+
+  //   &:focus {
+  //     background: darken( var(--blue-500), 5% );
+  //   }   
+  // }
+
+  .c-btn--tertiary {
+    border-color: transparent;
+    color: var(--blue-500);
+
+    &:visited {
+      color: var(--blue-500);
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline; 
+    }
+
+    &:active {
+      // border-bottom-color: lighten( var(--blue-500), 5% );
+    }
+  }
+
+  
+/* Size variants
+========================================================================== */
+
+.c-btn--s {
+  font-size: var(--f-s);
+  padding: var(--u-2xs) var(--u-s);
+}
+
+.c-btn--m {
+  padding: var(--u-s) var(--u-m);
+}
+
+.c-btn--l {
+  font-size: var(--f-l);
+  padding: var(--u-m) var(--u-xl);
+}
+
+.c-btn--xl {
+  font-size: var(--f-xl);
+  padding: var(--u-l) var(--u-2xl);
+}
+
+  
+
+
+
+
+

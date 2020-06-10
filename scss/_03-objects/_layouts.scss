@@ -4,8 +4,8 @@
 
 .o-wrapper {
   margin: 0 auto;
-  padding-left: $u2;
-  padding-right: $u2;
+  padding-left: var(--u-m);
+  padding-right: var(--u-m);
 
   @include mq-l {
     max-width: 60rem;
@@ -13,26 +13,26 @@
 }
 
 .o-wrapper--s {
-  padding-left: $u1;
-  padding-right: $u1;
+  padding-left: var(--u-s);
+  padding-right: var(--u-s);
 }
 
 .o-wrapper--m {
-  padding-left: $u2;
-  padding-right: $u2;
+  padding-left: var(--u-m);
+  padding-right: var(--u-m);
 }
 
 .o-wrapper--l {
-  padding-left: $u3;
-  padding-right: $u3;
+  padding-left: var(--u-l);
+  padding-right: var(--u-l);
 }
 
 .o-wrapper--xl {
-  padding-left: $u4;
-  padding-right: $u4;
+  padding-left: var(--u-xl);
+  padding-right: var(--u-xl);
 }
 
 .o-wrapper--xxl {
-  padding-left: $u5;
-  padding-right: $u5;
+  padding-left: var(--u-2xl);
+  padding-right: var(--u-2xl);
 }

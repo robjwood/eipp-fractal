@@ -3,190 +3,159 @@
 ===========================================*/
 
 // Blue
-.u-blue90     { color: $Blue90; }
-.u-blue80     { color: $Blue80; }
-.u-blue70     { color: $Blue70; }
-.u-blue60     { color: $Blue60; }
-.u-blue       { color: $Blue50; }
-.u-blue40     { color: $Blue40; }
-.u-blue30     { color: $Blue30; }
-.u-blue20     { color: $Blue20; }
-.u-blue10     { color: $Blue10; }
+.color\:blue-100              { color: var(--blue-100); }
+.color\:blue-200              { color: var(--blue-200); }
+.color\:blue-300              { color: var(--blue-300); }
+.color\:blue-500              { color: var(--blue-500); }
+.color\:blue-800              { color: var(--blue-800); }
+.color\:blue-900              { color: var(--blue-900); }
 
-.u-bg-blue90  { background-color: $Blue90; }
-.u-bg-blue80  { background-color: $Blue80; }
-.u-bg-blue70  { background-color: $Blue70; }
-.u-bg-blue60  { background-color: $Blue60; }
-.u-bg-blue    { background-color: $Blue50; }
-.u-bg-blue40  { background-color: $Blue40; }
-.u-bg-blue30  { background-color: $Blue30; }
-.u-bg-blue20  { background-color: $Blue20; }
-.u-bg-blue10  { background-color: $Blue10; }
+.background-color\:blue-100   { background-color: var(--blue-100); }
+.background-color\:blue-200   { background-color: var(--blue-200); }
+.background-color\:blue-300   { background-color: var(--blue-300); }
+.background-color\:blue-500   { background-color: var(--blue-500); }
+.background-color\:blue-800   { background-color: var(--blue-800); }
+.background-color\:blue-900   { background-color: var(--blue-900); }
 
 
 
 // Violet
-.u-violet90      { color: $Violet90; }
-.u-violet80      { color: $Violet80; }
-.u-violet70      { color: $Violet70; }
-.u-violet        { color: $Violet; }
-.u-violet30      { color: $Violet30; }
-.u-violet20      { color: $Violet20; }
-.u-violet10      { color: $Violet10; }
+.color\:violet-100            { color: var(--violet-100); }
+.color\:violet-200            { color: var(--violet-200); }
+.color\:violet-300            { color: var(--violet-300); }
+.color\:violet-500            { color: var(--violet-500); }
+.color\:violet-700            { color: var(--violet-700); }
+.color\:violet-800            { color: var(--violet-800); }
+.color\:violet-900            { color: var(--violet-900); }
 
-.u-bg-violet90   { background-color: $Violet90; }
-.u-bg-violet80   { background-color: $Violet80; }
-.u-bg-violet70   { background-color: $Violet70; }
-.u-bg-violet     { background-color: $Violet; }
-.u-bg-violet30   { background-color: $Violet30; }
-.u-bg-violet20   { background-color: $Violet20; }
-.u-bg-violet10   { background-color: $Violet10; }
-
+.background-color\:violet-100 { background-color: var(--violet-100); }
+.background-color\:violet-200 { background-color: var(--violet-200); }
+.background-color\:violet-300 { background-color: var(--violet-300); }
+.background-color\:violet-500 { background-color: var(--violet-500); }
+.background-color\:violet-700 { background-color: var(--violet-700); }
+.background-color\:violet-800 { background-color: var(--violet-800); }
+.background-color\:violet-900 { background-color: var(--violet-900); }
 
 
 // Purple
-.u-purple90      { color: $Purple90; }
-.u-purple80      { color: $Purple80; }
-.u-purple70      { color: $Purple70; }
-.u-purple        { color: $Purple; }
-.u-purple30      { color: $Purple30; }
-.u-purple20      { color: $Purple20; }
-.u-purple10      { color: $Purple10; }
+.color\:purple-100            { color: var(--purple-100); }
+.color\:purple-200            { color: var(--purple-200); }
+.color\:purple-300            { color: var(--purple-300); }
+.color\:purple-500            { color: var(--purple-500); }
+.color\:purple-700            { color: var(--purple-700); }
+.color\:purple-800            { color: var(--purple-800); }
+.color\:purple-900            { color: var(--purple-900); }
 
-.u-bg-purple90   { background-color: $Purple90; }
-.u-bg-purple80   { background-color: $Purple80; }
-.u-bg-purple70   { background-color: $Purple70; }
-.u-bg-purple     { background-color: $Purple; }
-.u-bg-purple30   { background-color: $Purple30; }
-.u-bg-purple20   { background-color: $Purple20; }
-.u-bg-purple10   { background-color: $Purple10; }
+.background-color\:purple-100 { background-color: var(--purple-100); }
+.background-color\:purple-200 { background-color: var(--purple-200); }
+.background-color\:purple-300 { background-color: var(--purple-300); }
+.background-color\:purple-500 { background-color: var(--purple-500); }
+.background-color\:purple-700 { background-color: var(--purple-700); }
+.background-color\:purple-800 { background-color: var(--purple-800); }
+.background-color\:purple-900 { background-color: var(--purple-900); }
 
 
 
 // Pink
-.u-pink90      { color: $Pink90; }
-.u-pink80      { color: $Pink80; }
-.u-pink70      { color: $Pink70; }
-.u-pink        { color: $Pink; }
-.u-pink30      { color: $Pink30; }
-.u-pink20      { color: $Pink20; }
-.u-pink10      { color: $Pink10; }
+.color\:pink-100            { color: var(--pink-100); }
+.color\:pink-200            { color: var(--pink-200); }
+.color\:pink-300            { color: var(--pink-300); }
+.color\:pink-500            { color: var(--pink-500); }
+.color\:pink-700            { color: var(--pink-700); }
+.color\:pink-800            { color: var(--pink-800); }
+.color\:pink-900            { color: var(--pink-900); }
 
-.u-bg-pink90   { background-color: $Pink90; }
-.u-bg-pink80   { background-color: $Pink80; }
-.u-bg-pink70   { background-color: $Pink70; }
-.u-bg-pink     { background-color: $Pink; }
-.u-bg-pink30   { background-color: $Pink30; }
-.u-bg-pink20   { background-color: $Pink20; }
-.u-bg-pink10   { background-color: $Pink10; }
-
+.background-color\:pink-100 { background-color: var(--pink-100); }
+.background-color\:pink-200 { background-color: var(--pink-200); }
+.background-color\:pink-300 { background-color: var(--pink-300); }
+.background-color\:pink-500 { background-color: var(--pink-500); }
+.background-color\:pink-700 { background-color: var(--pink-700); }
+.background-color\:pink-800 { background-color: var(--pink-800); }
+.background-color\:pink-900 { background-color: var(--pink-900); }
 
 
 // Aqua
-.u-aqua90      { color: $Aqua90; }
-.u-aqua80      { color: $Aqua80; }
-.u-aqua70      { color: $Aqua70; }
-.u-aqua        { color: $Aqua; }
-.u-aqua30      { color: $Aqua30; }
-.u-aqua20      { color: $Aqua20; }
-.u-aqua10      { color: $Aqua10; }
 
-.u-bg-aqua90   { background-color: $Aqua90; }
-.u-bg-aqua80   { background-color: $Aqua80; }
-.u-bg-aqua70   { background-color: $Aqua70; }
-.u-bg-aqua     { background-color: $Aqua; }
-.u-bg-aqua30   { background-color: $Aqua30; }
-.u-bg-aqua20   { background-color: $Aqua20; }
-.u-bg-aqua10   { background-color: $Aqua10; }
+.color\:aqua-100      { color: var(--aqua-100); }
+.color\:aqua-200      { color: var(--aqua-200); }
+.color\:aqua-300      { color: var(--aqua-300); }
+.color\:aqua-500      { color: var(--aqua-500); }
+.color\:aqua-700      { color: var(--aqua-700); }
+.color\:aqua-800      { color: var(--aqua-800); }
+.color\:aqua-900      { color: var(--aqua-900); }
 
-
-
-// Pear
-.u-pear90      { color: $Pear90; }
-.u-pear80      { color: $Pear80; }
-.u-pear70      { color: $Pear70; }
-.u-pear        { color: $Pear; }
-.u-pear30      { color: $Pear30; }
-.u-pear20      { color: $Pear20; }
-.u-pear10      { color: $Pear10; }
-
-.u-bg-pear90   { background-color: $Pear90; }
-.u-bg-pear80   { background-color: $Pear80; }
-.u-bg-pear70   { background-color: $Pear70; }
-.u-bg-pear     { background-color: $Pear; }
-.u-bg-pear30   { background-color: $Pear30; }
-.u-bg-pear20   { background-color: $Pear20; }
-.u-bg-pear10   { background-color: $Pear10; }
+.background-color\:aqua-100   { background-color: var(--aqua-100); }
+.background-color\:aqua-200   { background-color: var(--aqua-200); }
+.background-color\:aqua-300   { background-color: var(--aqua-300); }
+.background-color\:aqua-500   { background-color: var(--aqua-500); }
+.background-color\:aqua-700   { background-color: var(--aqua-700); }
+.background-color\:aqua-800   { background-color: var(--aqua-800); }
+.background-color\:aqua-900   { background-color: var(--aqua-900); }
 
 
 
 // Gold
-.u-gold90      { color: $Gold90; }
-.u-gold80      { color: $Gold80; }
-.u-gold70      { color: $Gold70; }
-.u-gold        { color: $Gold50; }
-.u-gold30      { color: $Gold30; }
-.u-gold20      { color: $Gold20; }
-.u-gold10      { color: $Gold10; }
+.color\:gold-100      { color: var(--gold-100); }
+.color\:gold-200      { color: var(--gold-200); }
+.color\:gold-300      { color: var(--gold-300); }
+.color\:gold-500      { color: var(--gold-500); }
+.color\:gold-700      { color: var(--gold-700); }
+.color\:gold-800      { color: var(--gold-800); }
+.color\:gold-900      { color: var(--gold-900); }
 
-.u-bg-gold90   { background-color: $Gold90; }
-.u-bg-gold80   { background-color: $Gold80; }
-.u-bg-gold70   { background-color: $Gold70; }
-.u-bg-gold     { background-color: $Gold50; }
-.u-bg-gold30   { background-color: $Gold30; }
-.u-bg-gold20   { background-color: $Gold20; }
-.u-bg-gold10   { background-color: $Gold10; }
+.background-color\:gold-100   { background-color: var(--gold-100); }
+.background-color\:gold-200   { background-color: var(--gold-200); }
+.background-color\:gold-300   { background-color: var(--gold-300); }
+.background-color\:gold-500   { background-color: var(--gold-500); }
+.background-color\:gold-700   { background-color: var(--gold-700); }
+.background-color\:gold-800   { background-color: var(--gold-800); }
+.background-color\:gold-900   { background-color: var(--gold-900); }
+
 
 
 
 // Greyscale
-.u-white        { color: $White; }
+.color\:white                { color: var(--white); }
+.background-color\:white     { background-color: var(--white); }
 
-.u-grey90      { color: $Grey90; }
-.u-grey80      { color: $Grey80; }
-.u-grey70      { color: $Grey70; }
-.u-grey60      { color: $Grey60; }
-.u-grey        { color: $Grey50; }
-.u-grey40      { color: $Grey40; }
-.u-grey30      { color: $Grey30; }
-.u-grey20      { color: $Grey20; }
-.u-grey10      { color: $Grey10; }
+.color\:grey-100             { color: var(--grey-100); }
+.color\:grey-200             { color: var(--grey-200); }
+.color\:grey-300             { color: var(--grey-300); }
+.color\:grey-500             { color: var(--grey-500); }
+.color\:grey-700             { color: var(--grey-700); }
+.color\:grey-800             { color: var(--grey-800); }
+.color\:grey-900             { color: var(--grey-900); }
 
-.u-black        { color: $Black; }
+.background-color\:grey-100  { background-color: var(--grey-100); }
+.background-color\:grey-200  { background-color: var(--grey-200); }
+.background-color\:grey-300  { background-color: var(--grey-300); }
+.background-color\:grey-500  { background-color: var(--grey-500); }
+.background-color\:grey-700  { background-color: var(--grey-700); }
+.background-color\:grey-800  { background-color: var(--grey-800); }
+.background-color\:grey-900  { background-color: var(--grey-900); }
 
+.color\:black               { color: var(--black); }
+.background-color\:black    { background-color: var(--black); }
 
-
-.u-bg-white    { background-color: $White; }
-
-.u-bg-grey90   { background-color: $Grey90; }
-.u-bg-grey80   { background-color: $Grey80; }
-.u-bg-grey70   { background-color: $Grey70; }
-.u-bg-grey60   { background-color: $Grey60; }
-.u-bg-grey     { background-color: $Grey50; }
-.u-bg-grey40   { background-color: $Grey40; }
-.u-bg-grey30   { background-color: $Grey30; }
-.u-bg-grey20   { background-color: $Grey20; }
-.u-bg-grey10   { background-color: $Grey10; }
-
-.u-bg-black    { background-color: $Black; }
 
 
 // Utility colours
-.u-positive           { color: $Positive; }
-.u-positive-light     { color: $PositiveLight; }
-.u-caution            { color: $Caution; }
-.u-caution-light      { color: $CautionLight; }
-.u-negative           { color: $Negative; }
-.u-negative-light     { color: $NegativeLight; }
-.u-neutral            { color: $Neutral; }
-.u-neutral-light      { color: $NeutralLight; }
+.color\:positive           { color: var(--Positive); }
+.color\:positive-light     { color: var(--PositiveLight); }
+.color\:caution            { color: var(--Caution); }
+.color\:caution-light      { color: var(--CautionLight); }
+.color\:negative           { color: var(--Negative); }
+.color\:negative-light     { color: var(--NegativeLight); }
+.color\:neutral            { color: var(--Neutral); }
+.color\:neutral-light      { color: var(--NeutralLight); }
 
-.u-bg-positive        { background-color: $Positive; }
-.u-bg-positive-light  { background-color: $PositiveLight; }
-.u-bg-caution         { background-color: $Caution; }
-.u-bg-caution-light   { background-color: $CautionLight; }
-.u-bg-negative        { background-color: $Negative; }
-.u-bg-negative-light  { background-color: $NegativeLight; }
-.u-bg-neutral         { background-color: $Neutral; }
-.u-bg-neutral-light   { background-color: $NeutralLight; }
+
+.background-color\:positive        { background-color: var(--Positive); }
+.background-color\:positive-light  { background-color: var(--PositiveLight); }
+.background-color\:caution         { background-color: var(--Caution); }
+.background-color\:caution-light   { background-color: var(--CautionLight); }
+.background-color\:negative        { background-color: var(--Negative); }
+.background-color\:negative-light  { background-color: var(--NegativeLight); }
+.background-color\:neutral         { background-color: var(--Neutral); }
+.background-color\:neutral-light   { background-color: var(--NeutralLight); }
 

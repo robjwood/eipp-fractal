@@ -21,7 +21,6 @@ html {
 
 .Meta-key,
 .Meta-value,
-
 .Prose,
 .Document-title,
 .Prose h2,
@@ -30,6 +29,14 @@ html {
 .Prose h5,
 .Prose h6 {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.Tree {
+  white-space: initial;
+}
+
+.Tree-collectionLabel {
+  font-size: 1rem;
 }
 
 .Prose h1 {
@@ -53,7 +60,7 @@ code, pre {
 
 .Header {
   box-shadow: initial;
-  background: #444;
+  background: #1c4f92;
 }
 
 .Header-title {
@@ -73,19 +80,30 @@ code, pre {
 }
 
 .Tree-title {
-  color: rgba(29,79,145,1);
-  font-size: 15px;
+  color: #1c4f92;
+  font-size: 1rem;;
   font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+
+  /* color: rgba(29,79,145,1);
+  font-weight: bold; */
 }
 
 #tree-docs .Tree-title {
-  border-top: 1px solid #ddd;
-  margin-top: 33px;
-  padding-top: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .Tree-entityLink,
 .Tree-entityLink:visited,
 .Tree-entityLink:hover {
-  color: rgba(199,0,127,1);
+  color: rgba(10,10,10,1);
+  font-size: 1rem;
+}
+
+.Frame-handle {
+  display: none;
 }

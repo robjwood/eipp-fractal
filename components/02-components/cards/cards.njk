@@ -1,0 +1,24 @@
+<li class="c-card c-card--{{ card.layout }}">
+  <a href="{{ card.url }}" class="c-card__link black no-underline {{ card.link }}">
+
+    {%- if (card.layout !== 'text-only') and (card.layout !== 'text-top') %}
+    <div class="c-card__img">
+      <img src="{{ card.img }}" class="w-100" />
+    </div>
+    {%- endif %}
+
+    {# Hide the content block if the layout is image only #}
+    {%- if card.layout !== 'img-only' %}
+      <div class="u-pa2">
+        <h2 class="tracked-tight f3">{{ card.heading }}</h2>
+        <p>{{ card.copy }}</p>
+      </div>
+    {%- endif %}
+
+    {%- if card.layout == 'text-top' %}
+    <div class="c-card__img">
+      <img src="{{ card.img }}" class="w-100" />
+    </div>
+    {%- endif %}
+  </a>
+</li>

@@ -1,0 +1,38 @@
+<div class="c-accordion">
+
+{% for accordion in accordion %}
+  <h2 class="c-accordion__title {{ accordion.titleClass }}">
+    <img class="c-accordion__icon" src="/img/{{ accordion.icon }}" alt="">
+    <button aria-expanded="false">
+      {{ accordion.title }}
+      <svg viewBox="0 0 11 11" aria-hidden="true" focusable="false" class="h-6">  
+        <rect class="vert" height="9" width="1" y="1" x="5" />
+        <rect height="1" width="9" y="5" x="1" />
+      </svg> 
+    </button>
+  </h2>
+  <div hidden class="c-accordion__content o-wrapper o-wrapper--m">
+    <p>{{ accordion.copy}}</p>
+  </div>
+{% endfor %}
+
+</div>
+
+<script>
+  (function() {
+    const headings = document.querySelectorAll('h2')
+
+    Array.prototype.forEach.call(headings, heading => {
+      let btn = heading.querySelector('button')
+      let target = heading.nextElementSibling
+
+      btn.onclick = () => {
+        let expanded = btn.getAttribute('aria-expanded') === 'true' || false
+
+        btn.setAttribute('aria-expanded', !expanded)
+        target.hidden = expanded    
+      }
+    })
+  })()
+</script>
+

@@ -11,20 +11,18 @@ This aims to show the patterns and components we currently have that can be used
 + How is a homepage block meant to look?
 
 
----
 
 ## For developers
 
-Here are a couple of demos of a Fractal Pattern Library:
+Here are a few demos of the Fractal Pattern Library:
 
++ https://play.ee/styleguide/
++ https://patterns.boston.gov
++ https://kanbasu.liip.ch
++ https://styleguide.liip.ch
 + http://fractal.clearleft.com/
-+ http://bits.24ways.org/
 + http://patterns.perchcms.com
-+ https://patterns.boston.gov/
-+ https://kanbasu.liip.ch/2/
-+ https://stijlgids.stad.gent/v2/
-+ https://styleguide.liip.ch/
 + https://components.designsystem.digital.gov/
 + https://style.eurostar.com/
 
-This is just a demo at the moment. You can edit its contents at `docs/01-index.hbs`.
+This is just a demo at the moment. You can edit its contents at `docs/01-index.md`.

@@ -2,178 +2,135 @@
 // ===========================================
 // ===========================================
 
-  // Brand colours
-  // -----------------------------------------
+  :root {
+    --u-2xs: 0.1rem;  
+    --u-xs: 0.25rem;    
+    --u-s: 0.5rem;      
+    --u-m: 1rem;      
+    --u-l: 1.5rem;      
+    --u-xl: 2rem;    
+    --u-2xl: 3rem;  
+    --u-3xl: 4rem;  
 
-  // Greyscale
-
-  $White:             hsla(0,0,100,1);    // #ffffff
-
-  $Grey90:            hsla(214,15%,20%,1); // #333333
-  $Grey80:            hsla(214,10%,30%,1); // #4b4b4b
-  $Grey70:            hsla(214,10%,40%,1); // #656565
-  $Grey60:            hsla(214,10%,45%,1); // #656565
-  $Grey50:            hsla(214,10%,50%,1); // #808080
-  $Grey40:            hsla(214,10%,65%,1); // #a7a7a7
-  $Grey30:            hsla(214,10%,75%,1); // #a7a7a7
-  $Grey20:            hsla(214,10%,90%,1); // #cfcfcf
-  $Grey10:            hsla(214,10%,97%,1); // #f9f9f9 
-
-  $Black:             hsla(0,0,0,1);      // #000000
   
-  
-  
-  // Blue - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#0c2039,1c5092,f4f7fa
+    --font-base: sans-serif;
 
-  $Blue90:            hsla(214,68%,13%,1);
-  $Blue80:            hsla(214,68%,20%,1);
-  $Blue70:            hsla(214,68%,27%,1);
-  $Blue60:            hsla(214,68%,27%,1);
-  $Blue50:            hsla(214,68%,34%,1);
-  $Blue40:            hsla(223,32%,57%,1);
-  $Blue30:            hsla(223,32%,57%,1);
-  $Blue20:            hsla(223,32%,77%,1);
-  $Blue10:            hsla(223,32%,97%,1);
-
-
-  // Violet - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#381a3a,8c4091,f9f5f9
-
-  $Violet90:          hsla(296,39%,16%,1); // #381a3a
-  $Violet80:          hsla(296,39%,24%,1); // #532656
-  $Violet70:          hsla(296,39%,33%,1); // #6f3373
-  $Violet:            hsla(296,39%,41%,1); // #8c4092
-  $Violet30:          hsla(300,29%,60%,1); // #b27cb4
-  $Violet20:          hsla(300,29%,78%,1); // #d6b8d6
-  $Violet10:          hsla(300,29%,97%,1); // #f9f5f9
+    --measure: 60ch;
     
-
-
-
-  // Pink - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#500032,c7007f,fcf2f8
-
-  $Pink90:            hsla(322,100%,16%,1);
-  $Pink80:            hsla(322,100%,23%,1);
-  $Pink70:            hsla(322,100%,31%,1);
-  $Pink:              hsla(322,100%,39%,1);
-  $Pink30:            hsla(331,64%,65%,1);
-  $Pink20:            hsla(331,64%,82%,1);
-  $Pink10:            hsla(331,64%,97%,1);
-
-
-
-  // Aqua - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#004456,00aad5,f2fbfd
+    /* Font sizes */
   
-  $Aqua90:            hsla(193,100%,17%,1);
-  $Aqua80:            hsla(193,100%,25%,1);
-  $Aqua70:            hsla(193,93%,34%,1);
-  $Aqua:              hsla(193,86%,45%,1);
-  $Aqua30:            hsla(197,64%,69%,1);
-  $Aqua20:            hsla(197,64%,84%,1);
-  $Aqua10:            hsla(197,64%,97%,1);
-  
+    --ratio: 1.2;
+
+    --f-xs: calc(var(--f-s) / var(--ratio));
+    --f-s: calc(var(--f-m) / var(--ratio));
+
+    --f-m: 1rem;
+
+    --f-l: calc(var(--f-m) * var(--ratio));
+    --f-xl: calc(var(--f-l) * var(--ratio));
+    --f-2xl: calc(var(--f-xl) * var(--ratio));
+    --f-3xl: calc(var(--f-2xl) * var(--ratio));
+    --f-4xl: calc(var(--f-3xl) * var(--ratio));
+    --f-5xl: calc(var(--f-4xl) * var(--ratio));
 
 
-  // Pear - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#3c4d0c,95c11f,fafff4
-  
-  $Pear90:            hsla(76,72%,17%,1);
-  $Pear80:            hsla(76,72%,26%,1);
-  $Pear70:            hsla(76,72%,35%,1);
-  $Pear:              hsla(76,72%,44%,1);
-  $Pear30:            hsla(76,56%,64%,1);
-  $Pear20:            hsla(76,56%,81%,1);
-  $Pear10:            hsla(76,56%,97%,1);
+    /* Line heights */
+    --lh-none:    1;
+    --lh-tight:   1.25;
+    --lh-snug:    1.375;
+    --lh-normal:  1.5;
+    --lh-relaxed: 1.625;
+    --lh-loose:   2;
 
-  
+    /* Flow space */
+    --flow-space: 1em;
 
-  // Gold - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#5a4200,e2a800,fefdfa 
-  // $Gold90:         hsla(44,98%,18%,1);
-  // $Gold80:         hsla(45,99%,26%,1);
-  // $Gold70:         hsla(45,100%,35%,1);
-  // $Gold:            hsla(45,100%,49%,1);
-  // $Gold30:         hsla(40,82%,67%,1);
-  // $Gold20:         hsla(38,90%,84%,1);
-  // $Gold10:         hsla(48,56%,98%,1);
-  
-  $Gold90:            hsla(45,100%,18%,1);
-  $Gold80:            hsla(45,100%,26%,1);
-  $Gold70:            hsla(45,100%,35%,1);
-  $Gold50:            hsla(45,100%,49%,1);
-  $Gold30:            hsla(45,100%,67%,1);
-  $Gold20:            hsla(45,100%,84%,1);
-  $Gold10:            hsla(45,100%,98%,1);
+    /* Brand colours */
+    /* ----------------------------------------- */
 
+    /* Greyscale */
+    --white:      hsla(0,0%,100%,1);
 
+    --grey-100:   hsla(214,10%,97%,1);
+    --grey-200:   hsla(214,10%,90%,1);
+    --grey-300:   hsla(214,10%,75%,1);
+    --grey-500:   hsla(214,10%,50%,1);
+    --grey-800:   hsla(214,10%,30%,1);
+    --grey-900:   hsla(214,15%,20%,1);
 
-  // Purple - http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker#200330,500778,f6f2f8
+    --black:      hsla(0,0%,0%,1);       
+      
+    /* Blue */
+    --blue-100:   hsla(223,32%,97%,1);
+    --blue-200:   hsla(223,32%,77%,1);
+    --blue-300:   hsla(223,32%,57%,1);
+    --blue-500:   hsla(214,68%,34%,1);
+    --blue-800:   hsla(214,68%,20%,1);
+    --blue-900:   hsla(214,68%,13%,1);
 
-  $Purple90:          hsla(278,92%,10%,1);
-  $Purple80:          hsla(278,84%,15%,1);
-  $Purple70:          hsla(278,86%,20%,1);
-  $Purple:            hsla(278,88%,25%,1);
-  $Purple30:          hsla(278,30%,50%,1);
-  $Purple20:          hsla(278,30%,72%,1);
-  $Purple10:          hsla(278,30%,96%,1);
+    /* Violet */
+    --violet-100: hsla(300,27%,97%,1);
+    --violet-200: hsla(300,27%,78%,1);
+    --violet-300: hsla(300,27%,60%,1);
+    --violet-500: hsla(296,39%,41%,1);
+    --violet-800: hsla(296,39%,24%,1);
+    --violet-900: hsla(296,39%,16%,1);
+
+    /* Purple */
+    --purple-100: hsla(278,29%,96%,1);
+    --purple-200: hsla(278,29%,72%,1);
+    --purple-300: hsla(278,29%,50%,1);
+    --purple-500: hsla(278,88%,25%,1);
+    --purple-800: hsla(278,84%,15%,1);
+    --purple-900: hsla(278,92%,10%,1);
+
+    /* Gold */
+    --gold-100:   hsla(45,100%,98%,1);
+    --gold-200:   hsla(45,100%,84%,1);
+    --gold-300:   hsla(45,100%,67%,1);
+    --gold-500:   hsla(45,100%,49%,1);
+    --gold-800:   hsla(45,100%,26%,1);
+    --gold-900:   hsla(45,100%,18%,1);
     
-  
-  // Utility colours
+    /* Teal */
+    --aqua-100:   hsla(197,64%,97%,1);
+    --aqua-200:   hsla(197,64%,84%,1);
+    --aqua-300:   hsla(197,64%,69%,1);
+    --aqua-500:   hsla(193,86%,45%,1);
+    --aqua-800:   hsla(193,100%,25%,1);
+    --aqua-900:   hsla(193,100%,17%,1);
+    
+    /* Pear */
+    --pear-100:   hsla(76,85%,97%,1);
+    --pear-200:   hsla(76,58%,81%,1);
+    --pear-300:   hsla(76,56%,64%,1);
+    --pear-500:   hsla(76,72%,44%,1);
+    --pear-800:   hsla(76,72%,26%,1);
+    --pear-900:   hsla(76,72%,17%,1);
+    
+    /* Pink */
+    --pink-100:   hsla(331,64%,97%,1);
+    --pink-200:   hsla(331,64%,82%,1);
+    --pink-300:   hsla(331,64%,65%,1);
+    --pink-500:   hsla(322,100%,39%,1);
+    --pink-800:   hsla(322,100%,23%,1);
+    --pink-900:   hsla(322,100%,16%,1);
 
-  $Positive:          hsla(120,75%,25%,1);
-  $PositiveLight:     hsla(120,75%,90%,1);
-  $Caution:           hsla(45,75%,50%,1);
-  $CautionLight:      hsla(45,75%,90%,1);
-  $Negative:          hsla(0,75%,50%,1);
-  $NegativeLight:     hsla(0,75%,90%,1);
-  $Neutral:           hsla(200,40%,35%,1);
-  $NeutralLight:      hsla(200,40%,90%,1);
+    --positive:          hsla(120,75%,25%,1);
+    --positiveLight:     hsla(120,75%,90%,1);
+    
+    --caution:           hsla(45,75%,50%,1);
+    --cautionLight:      hsla(45,75%,90%,1);
+    
+    --negative:          hsla(0,75%,50%,1);
+    --negativeLight:     hsla(0,75%,90%,1);
+    
+    --neutral:           hsla(200,40%,35%,1);
+    --neutralLight:      hsla(200,40%,90%,1);
+  }
 
-
-
-
-  // Random colours
-  $SkyBlue:           hsla(200,90,90,1);
-
-
-  // Units of measure
+// Brand colours
   // -----------------------------------------
-
-  $u1: 0.5rem;
-  $u2: 1rem;
-  $u3: 1.5rem;
-  $u4: 2rem;
-  $u5: 4rem;
-  $u6: 8rem;
-  $u7: 16rem;
-
-
-  
-  // Font sizes
-  // -----------------------------------------
-
-  $f-headline: 6rem;
-  $f-subheadline: 5rem;
-
-  $f1: 2.4rem;
-  $f2: 1.9rem;
-  $f3: 1.6rem;
-  $f4: 1.2rem;
-  $f5: 1rem;
-  $f6: .8rem;
-  $f7: .6rem;
-
-  // Line heights
-  // -----------------------------------------
-
-  $lh-copy: 1.5;
-  $lh-title: 1.2;
-
-
-
-  // Fonts families
-  // -----------------------------------------
-
-  $BrandFont:        		"Poppins", "Helvetica Neue", Arial, sans-serif;
-	$BrandFontBold:      	"Poppins", "Helvetica Neue", Arial, sans-serif;
-	$BrandFontSecondary:  Arial, "Helvetica Neue", sans-serif;
 
 
 

@@ -38,7 +38,7 @@ li:hover {
 }
 
 ul li ul {
-	background: $Blue50;
+	background: var(--blue-500);
 	visibility: hidden;
   opacity: 0;
   min-width: 5rem;
@@ -144,26 +144,26 @@ ul li ul li {
 // ========================================================================== */
 
 //   .c-btn--s {
-//     font-size: $f6;
-//     padding: calc(#{$u1} / 2) $u1;
+//     font-size: var(--f-s);
+//     padding: calc(#{var(--u-s)} / 2) var(--u-s);
 //     // padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
 //   }
 
 //   .c-btn--m {
-//     padding: $u1 $u3;
+//     padding: var(--u-s) var(--u-l);
 
 //     // font-size: $inuit-font-size-small;
 //     // padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
 //   }
 
 //   .c-btn--l {
-//     font-size: $f5;
-//     padding: $u2 $u4;
+//     font-size: var(--f-m);
+//     padding: var(--u-m) var(--u-xl);
 //   }
 
 //   .c-btn--xl {
-//     font-size: $f4;
-//     padding: $u3 $u5;
+//     font-size: var(--f-l);
+//     padding: var(--u-l) var(--u-2xl);
 //   }
 
 
@@ -202,7 +202,7 @@ ul li ul li {
 //   }
 
 //   &.c-btn--primary {
-//     // color: $Blue50;
+//     // color: var(--blue-500);
 
 //     &:hover,
 //     &:focus {
@@ -232,7 +232,7 @@ ul li ul li {
 //   }
 
 //   &.c-btn--special {
-//     // color: $Gold50;
+//     // color: var(--gold-500);
 
 //     &:hover,
 //     &:focus {

@@ -1,0 +1,235 @@
+<nav id="menu" class="c-menu u-bg-white u-mb4 u-flex u-flex-row u-justify-between items-center" role="navigation">
+  <a class="c-menu__logo u-pa2 u-pv3-ns u-ph4-ns" href="/sites/myaccount/pages/publican-channel-home.aspx">
+    <img src="{{ '/img/pp-logo.svg' | path }}" width="100px" alt="ei publican partnerships">
+  </a>
+  <ul class="c-menu__list u-ma0 u-pl0 list u-flex u-items-center">
+    <li class="c-menu__item hideablemenuitem">
+      <a class="c-menu__link" target="_self" href="#">
+        <img src="{{'/img/icon-shopping-cart.svg'}}" alt="Shopping cart icon" width="20" height="20">
+      </a>
+    </li>
+    <li class="c-menu__item searchLink searchLink">
+      <a class="c-menu__link" href="#">
+        <img src="{{'/img/icon-search.svg'}}" alt="Search icon" width="20" height="20">
+      </a>
+    </li>
+    <li class="c-menu__item hideablemenuitem">
+      <a class="c-menu__link opentabs" href="#">
+        <img src="{{'/img/icon-documents.svg'}}" alt="Documents icon" width="20" height="20">
+      </a>
+    </li>
+    <li class="c-menu__item mr5-ns userLink">
+      <a class="c-menu__link">
+        <img src="{{'/img/icon-account.svg'}}" alt="Account icon" width="20" height="20">
+      </a>
+    </li>
+    <li class="c-menu__item c-menu__hamburger">
+      <a href="#" class="c-menu__link c-menu__hamburgerlink">
+        <img src="{{'/img/hamburger.svg'}}" alt="Logged in" width="24px">
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  :root {
+    --grey90: hsla(214, 15%, 20%, 1);
+    --grey80: hsla(214, 10%, 30%, 1);
+    --grey70: hsla(214, 10%, 40%, 1);
+    --grey60: hsla(214, 10%, 45%, 1);
+    --grey: hsla(214, 10%, 50%, 1);
+    --grey40: hsla(214, 10%, 65%, 1);
+    --grey30: hsla(214, 10%, 75%, 1);
+    --grey20: hsla(214, 10%, 90%, 1);
+    --grey10: hsla(214, 10%, 97%, 1);
+
+
+  }
+
+  .c-menu {
+    border-bottom: 1px solid var(--grey20);
+    /*
+    @include mq-m {
+      margin-bottom: 0px;
+      position: relative;
+      z-index: 10;
+
+      &:last-child {
+        border-right: inherit;
+      }
+    }
+    */
+  }
+
+  .c-menu__logo {
+    /* display: table-cell; */
+    line-height: initial;
+    /* padding: 10px; */
+    /* vertical-align: middle; */
+    /* width: 30%; */
+
+    /*
+      @include mq-m {
+        padding: 12px 20px;
+        width: 20%;
+      }
+      */
+  }
+
+  .c-menu__logo img {
+    max-width: 100%;
+  }
+
+  .c-menu__list {
+    /* display: table; */
+    /* float : right; */
+    /* margin-bottom: 0; */
+    /* text-align: right; */
+    /* vertical-align: middle; */
+    /* width: 95%; */
+
+    /*
+      @include mq-m {
+        width: 70%;
+      }
+      */
+  }
+
+  .c-menu__item {
+    padding: 0 50px;
+  }
+
+
+  .c-menu__item a {
+    padding-top: var(--u-m);
+    padding-bottom: var(--u-m);
+    text-align: center;
+
+    @include mq-m {
+      padding-top: var(--u-xl);
+      padding-bottom: var(--u-xl);
+    }
+  }
+
+
+  .c-menu__logo .c-menu__link {
+    line-height: initial
+  }
+
+  .c-menu__link {
+    /* display: block; */
+  }
+
+
+  .c-menu__hamburger {
+    background-color: #000;
+    padding: 0 10px;
+    margin-right: 0;
+
+    /*
+      @include mq-m {
+        .c-menu__hamburger {
+          padding: 0 var(--u-l);
+        }
+      }
+      */
+
+  }
+
+  .c-menu__hamburger .c-menu__link {
+    display: block;
+    line-height: 0;
+    width: var(--u-2xl);
+  }
+
+  .navLoginLink {
+    width: 57px;
+    vertical-align: middle;
+    background: #1d4f91;
+  }
+
+  .megamenucontainer {
+    float: right;
+    margin-right: 210px;
+    display: none;
+
+    @include mq-m {
+      padding-top: 56px;
+    }
+  }
+
+
+
+
+
+
+
+
+  /*.userLink:active .userDropdown {
+      display: inline-block;
+  }
+
+  .userLink:focus .userDropdown {
+      display: inline-block;
+  }*/
+
+  .userDropdown {
+    background-color: var(--blue-500);
+    color: white;
+    display: none;
+    padding: 0 var(--u-m);
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 10;
+
+    @include mq-m {
+      .userDropdown {
+        right: 98px;
+        width: auto;
+      }
+    }
+  }
+
+
+
+  .userDropdown ul {
+    list-style-type: none;
+  }
+
+  .userDropdown ul {
+    margin-left: 0;
+    min-width: 150px;
+    padding: 10px 5px;
+  }
+
+
+  /* Search drawer */
+  .c-menu__search {
+    background: $Blue !important;
+    display: none;
+    color: var(--white);
+    position: absolute;
+    padding: var(--u-s);
+    text-align: left;
+    width: 100%;
+    z-index: 10;
+
+    @include mq-m {
+      right: 308px;
+      width: var(--u-4xl);
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+  h1 {
+    letter-spacing: -0.02rem;
+  }
+</style>

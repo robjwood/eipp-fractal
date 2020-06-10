@@ -1,0 +1,22 @@
+title: Accordion
+context: 
+  accordion:
+    - titleClass: u-white
+      icon: /img/icon-sport.png
+      title: One
+      copy: /img/link-indicator.png
+
+    - titleClass: u-white
+      icon: /img/icon-sign.png
+      title: Two
+      copy: /img/link-indicator.png
+
+    - titleClass: u-white
+      icon: /img/icon-phone.png
+      title: Three
+      copy: /img/link-indicator.png
+      
+    - titleClass: u-white
+      icon: /img/icon-sport.png
+      title: Four
+      copy: /img/link-indicator.png

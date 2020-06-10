@@ -1,0 +1,16 @@
+{% for notifications in notifications %}
+<div class="o-box c-notification c-notification--{{ notifications.modifierClass }} flow">
+  <p><strong>{{ notifications.modifierClass | capitalize}}:</strong> {{ notifications.copy }}</p>
+</div>
+{% endfor %}
+
+
+{% for alerts in alerts %}
+  <div class="o-box c-notification c-notification--{{ alerts.modifierClass }} flow">
+    <p><strong>{{ alerts.modifierClass | capitalize}}:</strong> {{ alerts.copy }}</p>
+    <div class="tr">
+      <a href="#" class="c-btn c-btn--s white">No</a>
+      <a href="#" class="c-btn c-btn--s white">Yes</a>
+    </div>
+  </div>
+{% endfor %}

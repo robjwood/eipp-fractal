@@ -8,8 +8,8 @@ table {
 }
 
   th, td {
-    border: 1px solid $Grey50;
-    padding: $u1;
+    border: 1px solid var(--grey-500);
+    padding: var(--u-s);
   }  
 
   th {

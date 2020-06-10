@@ -1,0 +1,51 @@
+/* BREADCRUMBS
+===========================================
+
+===========================================*/
+
+.breadcrumb {
+  padding-top: var(--u-s);
+  padding-bottom: var(--u-s);
+}
+
+
+
+  .breadcrumb__item {
+    display: inline-block;
+    overflow: hidden;
+    font-size: var(--f-s);
+    vertical-align: top;
+
+    @include mq-m {
+      font-size: var(--f-s);
+    }
+  }
+
+  .breadcrumb__link {
+    // color: $Aqua;
+
+    &:visited {
+      // color: $Aqua;
+    }
+
+    @include mq-m {
+      font-size: var(--f-s);
+    }
+  }
+
+
+
+  .breadcrumb__separator {
+    display: inline-block;
+    width: var(--u-m);
+    // padding-right: var(--u-s);
+    // padding-left: var(--u-s);
+  
+    // &:after {
+    //   content: ">";
+    // }
+  
+    path {
+      // fill: $Grey2;
+    }
+  }

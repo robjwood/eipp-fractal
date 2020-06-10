@@ -1,0 +1,172 @@
+/* CARDS
+===========================================
+===========================================*/
+
+.c-card-wrap {
+  padding-left: 0;
+
+  @include mq-ns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+    grid-gap: 0.5rem;
+  }
+
+}
+
+  .c-card {
+    border: var(--u-2xs) solid black;
+    border-radius: 0.5rem;
+    background-color: white;
+    list-style-type: none;
+    margin-bottom: var(--u-s);
+
+    @include mq-ns {
+      // display: flex;
+      // flex: 0 1 calc(50% - 0.25rem);
+      margin-bottom: 0;
+    }
+
+    @include mq-l {
+      // display: flex;
+      // flex: 0 1 calc(25% - 0.25rem);
+    }
+  }
+
+    .c-card__link,
+    .c-card__link:visited {
+      color: var(--black);
+    }
+
+      .c-card__img {
+        border-bottom: var(--u-s)/2 solid black;
+        position: relative;
+      }
+  
+  
+  
+
+
+// Modifiers
+
+.c-card--img-only {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.c-card--text-left {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  .c-card__link {
+    display: flex;
+
+    &> * {
+      flex: 1 0 0;
+    }
+  }
+}
+
+
+
+
+/*
+@supports (display: grid) {
+  .c-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: .5rem;
+    padding-left: 0;
+  }
+
+    .c-card {
+      border: var(--u-s)/2 solid black;
+      border-radius: 0.5rem;
+      display: inline-block;
+      position: relative;
+      background-color: white;
+    }
+
+    .c-card--no-gap {
+      grid-gap: 0;
+    }
+
+    .c-card--halves {
+      grid-template-columns: repeat(2, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+    
+    .c-card--thirds {
+      grid-template-columns: repeat(3, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+    
+    .c-card--quarters {
+      grid-template-columns: repeat(4, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--fifths {
+      grid-template-columns: repeat(5, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--sixths {
+      grid-template-columns: repeat(6, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--sevenths {
+      grid-template-columns: repeat(7, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--eighths {
+      grid-template-columns: repeat(8, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--ninths {
+      grid-template-columns: repeat(9, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+
+    .c-card--tenths {
+      grid-template-columns: repeat(10, 1fr);
+      
+      .c-card__item {
+        width: initial;
+      }
+    }
+  }
+*/

@@ -12,14 +12,14 @@
   }
 
   @include mq-m {
-    max-width: $u7 * 2.5;
+    max-width: var(--u-4xl) * 2.5;
   }
 
 }
 
   .o-img-block__item {
     flex: 1 1 170px;
-    padding: $u1 / 2;
+    padding: var(--u-s) / 2;
     
     > img {
       width: 100%;

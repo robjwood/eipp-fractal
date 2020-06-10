@@ -72,13 +72,13 @@
 
 
 .c-menu__item a {
-  padding-top: $u2;
-  padding-bottom: $u2;
+  padding-top: var(--u-m);
+  padding-bottom: var(--u-m);
   text-align: center;
 
   @include mq-m {
-    padding-top: $u4;
-    padding-bottom: $u4;
+    padding-top: var(--u-xl);
+    padding-bottom: var(--u-xl);
   }
 }
 
@@ -104,7 +104,7 @@
 
     @include mq-m {
       .c-menu__hamburger {
-        padding: 0 $u3;
+        padding: 0 var(--u-l);
       }
     }
 
@@ -113,5 +113,5 @@
 .c-menu__hamburger .c-menu__link {
   display: block;
   line-height: 0;
-  width: $u5;
+  width: var(--u-2xl);
 }

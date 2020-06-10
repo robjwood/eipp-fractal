@@ -1,0 +1,20 @@
+/* NUMBER INDICATOR
+===========================================
+===========================================*/
+
+.c-count {
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+  display: inline-block;
+  font-size: var(--f-xs);
+  font-weight: bold;
+  line-height: 0;
+  padding: var(--u-s);
+  position: absolute;
+  text-align: center;
+
+  height: 25px;
+  width: 25px;
+}

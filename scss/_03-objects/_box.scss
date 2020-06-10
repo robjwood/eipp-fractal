@@ -2,50 +2,80 @@
 ===========================================
 ===========================================*/
 
-/* ==========================================================================
-   #BOX
-   ========================================================================== */
+/* ALERTS
+===========================================
 
-/**
- * The box object simply boxes off content. Extend with cosmetic styles in the
- * Components layer.
- *
- * 1. So we can apply the `.o-box` class to naturally-inline elements.
- */
+===========================================*/
 
- .o-box {
-  display: block; /* [1] */
-  padding: $u1;
+// .o-box {
+//   background: white;
+//   color: black;
+//   padding: var(--u-l);
+//   border-radius: 0 5px 5px 0;
+//   box-shadow: 0 1px 5px 0 hsla(0,0%,0%,0.2);
+// }
 
-  > :last-child {
-    margin-bottom: 0;
+.o-box {
+  padding: var(--u-m);
+  border: var(--u-xs) solid;
+
+  color: var(--black);
+  background-color: var(--white);
+}
+
+  .o-box * {
+    color: inherit;
   }
 
-}
+  .o-box.invert {
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+// /* ==========================================================================
+//    #BOX
+//    ========================================================================== */
+
+// /**
+//  * The box object simply boxes off content. Extend with cosmetic styles in the
+//  * Components layer.
+//  *
+//  * 1. So we can apply the `.o-box` class to naturally-inline elements.
+//  */
+
+//  .o-box {
+//   display: block; /* [1] */
+//   padding: var(--u-s);
+
+//   > :last-child {
+//     margin-bottom: 0;
+//   }
+
+// }
 
 
 
 
 
-/* Size variants
-   ========================================================================== */
+// /* Size variants
+//    ========================================================================== */
 
-.o-box--flush {
-  padding: 0;
-}
+// .o-box--flush {
+//   padding: 0;
+// }
 
-.o-box--tiny {
-  padding: $u2 / 2;
-}
+// .o-box--tiny {
+//   padding: var(--u-m) / 2;
+// }
 
-.o-box--small {
-  padding: $u1;
-}
+// .o-box--small {
+//   padding: var(--u-s);
+// }
 
-.o-box--large {
-  padding: $u3;
-}
+// .o-box--large {
+//   padding: var(--u-l);
+// }
 
-.o-box--huge {
-  padding: $u5;
-}
+// .o-box--huge {
+//   padding: var(--u-2xl);
+// }

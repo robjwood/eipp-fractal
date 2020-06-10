@@ -3,73 +3,91 @@
 ===========================================*/
 
 
-/*
-
-1. Global (HTML) styles and enforced inheritance.
-
-These are optional.
-
-*/
-
-// 1. GLOBAL
-// ----------------------
-
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
-  font-family: inherit;
-  line-height: inherit;
-}
-
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 0.95rem;
-  overflow-y: scroll; /* [2] */
-  min-height: 100%;   /* [3] */
 }
 
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* 
+html {
+  font-family: sans-serif;
+  line-height: var(--lh-normal);
+  overflow-y: scroll;
+  min-height: 100%;
+}
+ */
+
+/* 
 body {
-  background-color: rgba(255,255,255,1);
-  color: $Black;
+  background-color: var(--white);
+  color: var(--black);
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
 }
+ */
 
-body:after {
-  background: red;
-  border-radius: 2px;
-  color: white;
-  font-size: $u1;
-  content: "Small screen";
-  letter-spacing: 2px;
-  opacity: 0.8;
-  padding: $u1 $u2;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-  right: 0;
-  
-  @include mq-ns {
-    background: blue;
-    content: "'Not small' screen";
-  }
-
-  @include mq-m {
-    background: green;
-    content: "Medium screen";
-  }
-
-  @include mq-l {
-    background: black;
-    content: "Large screen";
-  }
+ body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  /* line-height: 1.5; */
+  line-height: calc(2px + 2.5ex + 2px); /* What is this? https://hugogiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/*/
 }
 
+  body * {
+    line-height: calc(2px + 2.5ex + 2px);
+  }
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+article > * + *,
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
 /**
  * 1. Fluid images for responsive purposes.
@@ -91,11 +109,36 @@ img[height] {  /* [1] */
 
 
 
-// * + h1,
-// * + h2,
-// * + h3,
-// * + h4,
-// * + h5,
-// * + h6 {
-//   margin-bottom: $u1;
+
+
+
+
+// body:after {
+//   background: red;
+//   border-radius: 2px;
+//   color: white;
+//   font-size: var(--u-s);
+//   content: "Small screen";
+//   letter-spacing: 2px;
+//   opacity: 0.8;
+//   padding: var(--u-s) var(--u-m);
+//   position: absolute;
+//   text-transform: uppercase;
+//   top: 0;
+//   right: 0;
+  
+//   @include mq-ns {
+//     background: blue;
+//     content: "'Not small' screen";
+//   }
+
+//   @include mq-m {
+//     background: green;
+//     content: "Medium screen";
+//   }
+
+//   @include mq-l {
+//     background: black;
+//     content: "Large screen";
+//   }
 // }
