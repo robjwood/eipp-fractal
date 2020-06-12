@@ -1,13 +1,16 @@
-<nav role="navigation">
-  <ul class="c-global-nav">
-    <li class="c-global-nav__item"><a href="/components/preview/" class="c-global-nav__link c-global-nav__logo">
+<nav role="navigation" class="o-cluster">
+  <div>
+    <a href="/components/preview/global-nav" class="c-global-nav__link c-global-nav__logo">
       <img src="{{ '/img/pp-logo.svg' | path }}" width="100px" alt="ei publican partnerships">
-    </a></li>
-    
-    {% for item in primaryNav %}
-      <li class="c-global-nav__item"><a href="{{ item.url }}" class="c-global-nav__link">{{ item.linkLabel }}</a></li>
-    {% endfor %}
+    </a>
 
-    {# <li class="c-global-nav__item"><a href="{% link.pages-homepage %}" class="c-global-nav__link">User</a></li> #}
-  </ul>
+    <div class="o-cluster">
+      <ul class="c-global-nav">
+        {% for item in primaryNav %}
+          <li class="c-global-nav__item"><a href="{{ item.url }}" class="c-global-nav__link">{{ item.linkLabel }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
 </nav>

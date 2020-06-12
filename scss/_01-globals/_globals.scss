@@ -61,11 +61,11 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   /* line-height: 1.5; */
-  line-height: calc(2px + 2.5ex + 2px); /* What is this? https://hugogiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/*/
+  line-height: calc(2px + 2 + 2px); /* What is this? https://hugogiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/*/
 }
 
   body * {
-    line-height: calc(2px + 2.5ex + 2px);
+    line-height: calc(2px + 2ex + 2px);
   }
 
 ul[class],

@@ -1,6 +1,10 @@
 module.exports = {
-  status: 'wip',
+  status: "wip",
   context: {
+    label: {
+      for: "select",
+      text: "Select"
+    },
     select: [
       {
         'value': 'Option 1',
@@ -16,4 +20,4 @@ module.exports = {
       }
     ]
   }
-};
+}

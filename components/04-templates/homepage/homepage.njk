@@ -1,12 +1,16 @@
-{% render '@header' %}
+<div class="o-box">
+  {% render '@header' %}
+</div>
 
-<div class="o-wrapper">
-<ul class="c-card-wrap">
-{% for card in card %}
-  {% include '@cards' %}
-{% endfor %}
-</ul>
+<div class="o-box">
+  <ul class="c-card-wrap">
+  {% for card in card %}
+    {% include '@cards' %}
+  {% endfor %}
+  </ul>
+</div>
 
-{% render '@breadcrumb' %}
+<div class="o-box">
+  {% render '@breadcrumb' %}
 </div>
 

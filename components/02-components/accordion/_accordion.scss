@@ -5,9 +5,12 @@
 
 
 .c-accordion  {
-  margin-bottom: var(--u-xs);
-  
 }
+
+// .c-accordion * + * {
+//   margin-top: var(--u-xs);
+// }
+
 
   .c-accordion__title {
     color: var(--white);
@@ -19,8 +22,7 @@
     display: flex;
     align-items: center;
 
-    margin-top: var(--u-xs);
-    margin-bottom: 0;
+    // margin-top: var(--u-xs);
     padding: var(--u-s);
   }
 
