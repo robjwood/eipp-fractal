@@ -36,9 +36,10 @@
     }
   }
 
-    .c-card__link,
-    .c-card__link:visited {
-      // color: var(--black);
+    .c-card__link {
+      h2 {
+        font-size: var(--f-2xl);
+      }
     }
 
       .c-card__img {
